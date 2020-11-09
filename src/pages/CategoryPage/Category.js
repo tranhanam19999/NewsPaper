@@ -4,6 +4,32 @@ import Logo1 from '../../assets/images/icons/logo-01.png'
 import Logo2 from '../../assets/images/icons/logo-02.png'
 import banner1 from '../../assets/images/banner-01.jpg'
 import Banner2 from '../../assets/images/banner-02.jpg'
+import img1 from '../../assets/images/post-01.jpg'
+import img2 from '../../assets/images/post-02.jpg'
+import img3 from '../../assets/images/post-03.jpg'
+import img4 from '../../assets/images/post-04.jpg'
+import img5 from '../../assets/images/post-05.jpg'
+import img6 from '../../assets/images/post-06.jpg'
+import img7 from '../../assets/images/post-07.jpg'
+import img8 from '../../assets/images/post-08.jpg'
+import img10 from '../../assets/images/post-10.jpg'
+import img11 from '../../assets/images/post-11.jpg'
+import img12 from '../../assets/images/post-12.jpg'
+import img13 from '../../assets/images/post-13.jpg'
+import img14 from '../../assets/images/post-14.jpg'
+import img15 from '../../assets/images/post-15.jpg'
+import img16 from '../../assets/images/post-16.jpg'
+import img17 from '../../assets/images/post-17.jpg'
+import img25 from '../../assets/images/post-25.jpg'
+import img26 from '../../assets/images/post-26.jpg'
+import img27 from '../../assets/images/post-27.jpg'
+import img34 from '../../assets/images/post-34.jpg'
+import img36 from '../../assets/images/post-36.jpg'
+import img39 from '../../assets/images/post-39.jpg'
+import img40 from '../../assets/images/post-40.jpg'
+import img41 from '../../assets/images/post-41.jpg'
+import img42 from '../../assets/images/post-42.jpg'
+import img50 from '../../assets/images/post-50.jpg'
 import popularpost01 from '../../assets/images/popular-post-01.jpg'
 import popularpost02 from '../../assets/images/popular-post-02.jpg'
 import popularpost03 from '../../assets/images/popular-post-03.jpg'
@@ -226,7 +252,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-05.jpg" alt="IMG" />
+                                    <img src={img5} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -252,7 +278,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-10.jpg" alt="IMG" />
+                                    <img src={img10} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -278,7 +304,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-14.jpg" alt="IMG" />
+                                    <img src={img14} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -304,7 +330,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-36.jpg" alt="IMG" />
+                                    <img src={img36} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -334,7 +360,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-50.jpg" alt="IMG" />
+                                    <img src={img50} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -360,7 +386,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-08.jpg" alt="IMG" />
+                                    <img src={img8} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -386,7 +412,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-07.jpg" alt="IMG" />
+                                    <img src={img7} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -412,7 +438,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-06.jpg" alt="IMG" />
+                                    <img src={img6} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -550,7 +576,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-25.jpg" alt="IMG" />
+                                    <img src={img25} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -576,7 +602,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-27.jpg" alt="IMG" />
+                                    <img src={img27} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -602,7 +628,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-26.jpg" alt="IMG" />
+                                    <img src={img26} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -628,7 +654,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-34.jpg" alt="IMG" />
+                                    <img src={img34} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -684,7 +710,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-36.jpg" alt="IMG" />
+                                    <img src={img36} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -766,7 +792,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-39.jpg" alt="IMG" />
+                                    <img src={img39} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -792,7 +818,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-41.jpg" alt="IMG" />
+                                    <img src={img41} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -818,7 +844,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-42.jpg" alt="IMG" />
+                                    <img src={img42} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -844,7 +870,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-40.jpg" alt="IMG" />
+                                    <img src={img40} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -886,7 +912,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-25.jpg" alt="IMG" />
+                                    <img src={img25} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -912,7 +938,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-27.jpg" alt="IMG" />
+                                    <img src={img27} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -938,7 +964,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-26.jpg" alt="IMG" />
+                                    <img src={img26} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -964,7 +990,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-34.jpg" alt="IMG" />
+                                    <img src={img34} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1020,7 +1046,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-36.jpg" alt="IMG" />
+                                    <img src={img36} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1102,7 +1128,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-39.jpg" alt="IMG" />
+                                    <img src={img39} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1128,7 +1154,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-41.jpg" alt="IMG" />
+                                    <img src={img41} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1154,7 +1180,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-42.jpg" alt="IMG" />
+                                    <img src={img42} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1180,7 +1206,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-40.jpg" alt="IMG" />
+                                    <img src={img40} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1221,7 +1247,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-10.jpg" alt="IMG" />
+                                    <img src={img10} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1247,7 +1273,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-11.jpg" alt="IMG" />
+                                    <img src={img11} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1273,7 +1299,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-26.jpg" alt="IMG" />
+                                    <img src={img26} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1299,7 +1325,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-34.jpg" alt="IMG" />
+                                    <img src={img34} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1355,7 +1381,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-36.jpg" alt="IMG" />
+                                    <img src={img36} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1448,7 +1474,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-39.jpg" alt="IMG" />
+                                    <img src={img39} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1474,7 +1500,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-41.jpg" alt="IMG" />
+                                    <img src={img41} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1500,7 +1526,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-42.jpg" alt="IMG" />
+                                    <img src={img42} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1526,7 +1552,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-40.jpg" alt="IMG" />
+                                    <img src={img40} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1582,7 +1608,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-36.jpg" alt="IMG" />
+                                    <img src={img36} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1674,7 +1700,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-25.jpg" alt="IMG" />
+                                    <img src={img25} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1700,7 +1726,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-27.jpg" alt="IMG" />
+                                    <img src={img27} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1726,7 +1752,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-26.jpg" alt="IMG" />
+                                    <img src={img26} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1752,7 +1778,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-34.jpg" alt="IMG" />
+                                    <img src={img34} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1792,7 +1818,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-50.jpg" alt="IMG" />
+                                    <img src={img50} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1818,7 +1844,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-08.jpg" alt="IMG" />
+                                    <img src={img8} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1844,7 +1870,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-07.jpg" alt="IMG" />
+                                    <img src={img7} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
@@ -1870,7 +1896,7 @@ class CategoryPage extends React.Component{
                                 {/* Item post */}	
                                 <div>
                                   <a href="blog-detail-01.html" className="wrap-pic-w hov1 trans-03">
-                                    <img src="images/post-06.jpg" alt="IMG" />
+                                    <img src={img6} alt="IMG" />
                                   </a>
                                   <div className="p-t-10">
                                     <h5 className="p-b-5">
