@@ -1244,9 +1244,12 @@ a.breadcrumb-item:hover {
 .f2-s-1 {
   font-family: Lato-Regular;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1; /*line-height: 1.7;*/
+  display: flex; /*No*/
 }
-
+.cl9:hover{
+  color: #17b978;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ M-Text 16 - 25 ]*/
