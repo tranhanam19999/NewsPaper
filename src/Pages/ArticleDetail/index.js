@@ -1,25 +1,23 @@
-import React, {Component} from 'react';
-import Header from '../../Components/Layout/header'
-import Footer from '../../Components/Layout/footer'
-import Tag from '../../Components/Tag/tag';
-import PopularPosts from '../../Components/PopularPosts/popularposts';
-import Search from '../../Components/Search/search';
-import Breadcumb from '../../Components/Breadcumb/breadcumb';
+import React from 'react';
+import Header from '../../components/Layout/header'
+import Footer from '../../components/Layout/footer'
+import Tag from '../../components/Tag/tag';
+import PopularPosts from '../../components/PopularPosts/popularposts';
+import Breadcumb from '../../components/Breadcumb/breadcumb';
 
-class ProductDetail extends Component { 
-    render() {
+const ArticleDetail = () => { 
+
         return (
             <div>
               <Header/>
-        {/* Breadcrumb */}
         <Breadcumb label = "Blog" label1 = "Nulla non interdum metus non laoreet nisi tellus eget aliquam lorem pellentesque"/>
-        {/* Content */}
+        
         <section className="bg0 p-b-140 p-t-10">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-10 col-lg-8 p-b-30">
                 <div className="p-r-10 p-r-0-sr991">
-                  {/* Blog Detail */}
+                  
                   <div className="p-b-70">
                     <a href="#" className="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
                       Technology
@@ -56,7 +54,7 @@ class ProductDetail extends Component {
                     <p className="f1-s-11 cl6 p-b-25">
                       Praesent vel mi bibendum, finibus leo ac, condimentum arcu. Pellentesque sem ex, tristique sit amet suscipit in, mattis imperdiet enim. Integer tempus justo nec velit fringilla, eget eleifend neque blandit. Sed tempor magna sed congue auctor. Mauris eu turpis eget tortor ultricies elementum. Phasellus vel placerat orci, a venenatis justo. Phasellus faucibus venenatis nisl vitae vestibulum. Praesent id nibh arcu. Vivamus sagittis accumsan felis, quis vulputate
                     </p>
-                    {/* Tag */}
+                    
                     <div className="flex-s-s p-t-12 p-b-15">
                       <span className="f1-s-12 cl5 m-r-8">
                         Tags:
@@ -70,7 +68,7 @@ class ProductDetail extends Component {
                         </a>
                       </div>
                     </div>
-                    {/* Share */}
+                    
                     <div className="flex-s-s">
                       <span className="f1-s-12 cl5 p-t-1 m-r-15">
                         Share:
@@ -95,7 +93,7 @@ class ProductDetail extends Component {
                       </div>
                     </div>
                   </div>
-                  {/* Leave a comment */}
+                  
                   <div>
                     <h4 className="f1-l-4 cl3 p-b-12">
                       Leave a Comment
@@ -115,10 +113,10 @@ class ProductDetail extends Component {
                   </div>
                 </div>
               </div>
-              {/* Sidebar */}
+             
               <div className="col-md-10 col-lg-4 p-b-30">
                 <div className="p-l-10 p-rl-0-sr991 p-t-70">						
-                  {/* Category */}
+               
                   <div className="p-b-60">
                     <div className="how2 how2-cl4 flex-s-c">
                       <h3 className="f1-m-2 cl3 tab01-title">
@@ -153,7 +151,7 @@ class ProductDetail extends Component {
                       </li>
                     </ul>
                   </div>
-                  {/* Archive */}
+                  
                   <div className="p-b-37">
                     <div className="how2 how2-cl4 flex-s-c">
                       <h3 className="f1-m-2 cl3 tab01-title">
@@ -243,19 +241,17 @@ class ProductDetail extends Component {
                       </li>
                     </ul>
                   </div>
-                  {/* Popular Posts */}
+                
                   <PopularPosts/>
-                  {/* Tag */}
+              
                   <Tag/>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* Footer */}
               <Footer/>
             </div>
         );
     }
-}
-export default ProductDetail;
+export default ArticleDetail;

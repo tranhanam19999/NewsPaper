@@ -1,13 +1,10 @@
-import ItemAticleParentType from "../../Components/ItemAticleParentType/itemAticleParentType";
-import ItemArticleChildrenType from "../../Components/ItemArticleChildrenType/itemArticleChildrenType";
+import ItemAticleParentType from "../../components/ItemAticleParentType/itemAticleParentType";
+import ItemArticleChildrenType from "../../components/ItemArticleChildrenType/itemArticleChildrenType";
 const ArticleSecction = props => {
-    
     return(
         <div className="tab01 p-b-20">
                     <div className="tab01-head how2 how2-cl1 bocl12 flex-s-c m-r-10 m-r-0-sr991">
-                      {/* Brand tab */}
                       <h3 className="f1-m-2 cl12 tab01-title">{props.label}</h3>
-                      {/* Nav tabs */}
                       <ul className="nav nav-tabs" role="tablist">
                         <li className="nav-item">
                           <a
@@ -78,20 +75,15 @@ const ArticleSecction = props => {
                         <i className="fs-12 m-l-5 fa fa-caret-right" />
                       </a>
                     </div>
-                    {/* Tab panes */}
                     <div className="tab-content p-t-35">
                       <div className="tab-pane fade show active" id="tab1-1" role="tabpanel">
                         <div className="row">
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemAticleParentType/>
                           </div>
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
                           </div>
                         </div>
@@ -99,15 +91,11 @@ const ArticleSecction = props => {
                       <div className="tab-pane fade" id="tab1-2" role="tabpanel">
                         <div className="row">
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemAticleParentType/>
                           </div>
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
                           </div>
                         </div>
@@ -115,15 +103,11 @@ const ArticleSecction = props => {
                       <div className="tab-pane fade" id="tab1-3" role="tabpanel">
                         <div className="row">
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemAticleParentType/>
                           </div>
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
                           </div>
                         </div>
@@ -131,15 +115,11 @@ const ArticleSecction = props => {
                       <div className="tab-pane fade" id="tab1-4" role="tabpanel">
                         <div className="row">
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemAticleParentType/>
                           </div>
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
                           </div>
                         </div>
@@ -147,15 +127,11 @@ const ArticleSecction = props => {
                       <div className="tab-pane fade" id="tab1-5" role="tabpanel">
                         <div className="row">
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemAticleParentType/>
                           </div>
                           <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
-                            {/* Item post */}
                             <ItemArticleChildrenType/>
                           </div>
                         </div>

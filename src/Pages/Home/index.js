@@ -1,21 +1,17 @@
 import React from "react";
-import Header from "../../Components/Layout/header";
-import Footer from "../../Components/Layout/footer";
-import Search from "../../Components/Search/search";
-import SubscribeEmail from "../../Components/SubscribeEmail/subscribeEmail";
-
+import Header from "../../components/Layout/header";
+import Footer from "../../components/Layout/footer";
+import Search from "../../components/Search/search";
+import SubscribeEmail from "../../components/SubscribeEmail/subscribeEmail";
+import Tag from "../../components/Tag/tag";
+import ItemBannerArticle from "../../components/ItemBannerArticle/ItemBannerArticle";
+import ItemAticleParentType from "../../components/ItemAticleParentType/itemAticleParentType";
+import ArticleSecction from "../../components/ArticleSecction/articleSecction";
 import Video from "../../assets/images/video-01.jpg";
-import Tag from "../../Components/Tag/tag";
-import ItemBannerArticle from "../../Components/ItemBannerArticle/ItemBannerArticle";
-import ItemAticleParentType from "../../Components/ItemAticleParentType/itemAticleParentType";
-import ItemArticleChildrenType from "../../Components/ItemArticleChildrenType/itemArticleChildrenType";
-import ArticleSecction from "../../Components/ArticleSecction/articleSecction";
 
-class Home extends React.Component {
-  render() {
+const Home = () => {
     return (
       <div className="animsition">
-        {/* Header */}
         <Header />
         <div className="container">
           <div className="bg0 flex-wr-sb-c p-rl-20 p-tb-8">
@@ -41,7 +37,7 @@ class Home extends React.Component {
             <Search />
           </div>
         </div>
-        {/* Feature post */}
+      
         <section className="bg0">
           <div className="container">
             <div className="row m-rl--1">
@@ -56,17 +52,16 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
-        {/* Post */}
+     
         <section className="bg0 p-t-70">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-md-10 col-lg-8">
                 <div className="p-b-20">
-                  {/* Entertainment */}
                   <ArticleSecction label="Entertainment" label1 = "Celebrity" label2 = "Movies" label3 = "Music" label4 = "Games"/>
-                  {/* Business */}
+                  
                   <ArticleSecction label="Business" label1 = "Finance" label2 = "Money & Markets" label3 = "Small Business"/>
-                  {/* Travel */}
+                  
                   <ArticleSecction label="Travel" label1 = "Hotels" label2 = "Flight" label3 = "Beachs" label4 = "Culture"/>
                 </div>
               </div>
@@ -212,7 +207,7 @@ class Home extends React.Component {
             </div>
           </div>
         </section>
-        {/* Banner */}
+        
         <div className="container">
           <div className="flex-c-c">
             <a href="#">
@@ -224,7 +219,7 @@ class Home extends React.Component {
             </a>
           </div>
         </div>
-        {/* Latest */}
+        
         <section className="bg0 p-t-60 p-b-35">
           <div className="container">
             <div className="row justify-content-center">
@@ -234,34 +229,27 @@ class Home extends React.Component {
                 </div>
                 <div className="row p-t-35">
                   <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                    {/* Item latest */}
                     <ItemAticleParentType/>
                   </div>
                   <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                    {/* Item latest */}
                     <ItemAticleParentType/>
                   </div>
                   <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                    {/* Item latest */}
                     <ItemAticleParentType/>
                   </div>
                   <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                    {/* Item latest */}
                     <ItemAticleParentType/>
                   </div>
                   <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                    {/* Item latest */}
                     <ItemAticleParentType/>
                   </div>
                   <div className="col-sm-6 p-r-25 p-r-15-sr991">
-                    {/* Item latest */}
                     <ItemAticleParentType/>
                   </div>
                 </div>
               </div>
               <div className="col-md-10 col-lg-4">
                 <div className="p-l-10 p-rl-0-sr991 p-b-20">
-                  {/* Video */}
                   <div className="p-b-55">
                     <div className="how2 how2-cl4 flex-s-c m-b-35">
                       <h3 className="f1-m-2 cl3 tab01-title">Featured Video</h3>
@@ -293,9 +281,8 @@ class Home extends React.Component {
                       </div>
                     </div>
                   </div>
-                  {/* Subscribe */}
+                  
                   <SubscribeEmail />
-                  {/* Tag */}
                   <Tag />
                 </div>
               </div>
@@ -303,7 +290,6 @@ class Home extends React.Component {
           </div>
         </section>
         <Footer />
-        {/* Modal Video 01*/}
         <div
           className="modal fade"
           id="modal-video-01"
@@ -332,6 +318,4 @@ class Home extends React.Component {
       </div>
     );
   }
-}
-
 export default Home;

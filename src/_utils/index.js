@@ -1,5 +1,13 @@
 const sources = [
-    '/js/main.js'
+    '/vendor/jquery/jquery-3.2.1.min.js',
+    '/vendor/animsition/js/animsition.js',
+    '/vendor/animsition/js/animsition.min.js',
+    '/vendor/bootstrap/js/popper.js',
+    '/vendor/bootstrap/js/popper.min.js',
+    '/vendor/bootstrap/js/tooltip.js',     
+    '/vendor/bootstrap/js/bootstrap.js',
+    '/vendor/bootstrap/js/bootstrap.min.js',
+    '/js/main.js',
 ]
 const loadScripts = () => {
     const externalScripts = document.getElementById('external-scripts')

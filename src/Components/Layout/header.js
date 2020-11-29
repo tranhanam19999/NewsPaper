@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { BrowserRouter as Router, Route, Link, NavLink } from "react-router-dom";
 import img1 from '../../assets/images/icons/icon-night.png'
-
 const Header = props =>{
+  const [category,setCategory] = useState('All')
    return(
     <header>
           <div className="container-menu-desktop">
@@ -17,18 +18,10 @@ const Header = props =>{
                       HI 58° LO 56°
                     </span>
                   </span>
-                  <a href="#" className="left-topbar-item">
-                    About
-                  </a>
-                  <a href="#" className="left-topbar-item">
-                    Contact
-                  </a>
-                  <a href="#" className="left-topbar-item">
-                    Sing up
-                  </a>
-                  <a href="#" className="left-topbar-item">
-                    Log in
-                  </a>
+                  <Link to="/about" className="left-topbar-item">About</Link>
+                  <Link to="/contact" className="left-topbar-item">Contact</Link>
+                  <Link to="#" className="left-topbar-item">Sing up</Link>
+                  <Link to="#" className="left-topbar-item">Log in</Link>
                 </div>
                 <div className="right-topbar">
                   <a href="#">
@@ -73,18 +66,10 @@ const Header = props =>{
                   </span>
                 </li>
                 <li className="left-topbar">
-                  <a href="#" className="left-topbar-item">
-                    About
-                  </a>
-                  <a href="#" className="left-topbar-item">
-                    Contact
-                  </a>
-                  <a href="#" className="left-topbar-item">
-                    Sing up
-                  </a>
-                  <a href="#" className="left-topbar-item">
-                    Log in
-                  </a>
+                  <Link to="/about" className="left-topbar-item">About</Link>
+                  <Link to="/contact" className="left-topbar-item">Contact</Link>
+                  <Link to="#" className="left-topbar-item">Sing up</Link>
+                  <Link to="#" className="left-topbar-item">Log in</Link>
                 </li>
                 <li className="right-topbar">
                   <a href="#">
@@ -106,9 +91,10 @@ const Header = props =>{
               </ul>
               <ul className="main-menu-m">
                 <li>
-                  <a href="index.html">Home</a>
+                  {/* <a href="index.html">Home</a> */}
+                  <Link to="/">Home</Link>
                   <ul className="sub-menu-m">
-                    <li><a href="index.html">Homepage v1</a></li>
+                    <li><Link to="/">Homepage v1</Link></li>
                     <li><a href="home-02.html">Homepage v2</a></li>
                     <li><a href="home-03.html">Homepage v3</a></li>
                   </ul>
@@ -120,32 +106,32 @@ const Header = props =>{
                   <a href="category-01.html">News</a>
                 </li>
                 <li>
-                  <a href="category-02.html">Entertainment </a>
+                  <Link to="/category">Entertainment</Link>
                 </li>
                 <li>
                   <a href="category-01.html">Business</a>
                 </li>
                 <li>
-                  <a href="category-02.html">Travel</a>
+                  <Link to="/category">Travel</Link>
                 </li>
                 <li>
                   <a href="category-01.html">Life Style</a>
                 </li>
                 <li>
-                  <a href="category-02.html">Video</a>
+                  <Link to="/category">Video</Link>
                 </li>
                 <li>
                   <a href="#">Features</a>
                   <ul className="sub-menu-m">
                     <li><a href="category-01.html">Category Page v1</a></li>
-                    <li><a href="category-02.html">Category Page v2</a></li>
+                    <li><Link to="/category">Category Page v2</Link></li>
                     <li><a href="blog-grid.html">Blog Grid Sidebar</a></li>
                     <li><a href="blog-list-01.html">Blog List Sidebar v1</a></li>
                     <li><a href="blog-list-02.html">Blog List Sidebar v2</a></li>
-                    <li><a href="blog-detail-01.html">Blog Detail Sidebar</a></li>
+                    <li><Link to="/articleDetail">Blog Detail Sidebar</Link></li>
                     <li><a href="blog-detail-02.html">Blog Detail No Sidebar</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/contact">Contact Us</Link></li>
                   </ul>
                   <span className="arrow-main-menu-m">
                     <i className="fa fa-angle-right" aria-hidden="true" />
@@ -169,9 +155,9 @@ const Header = props =>{
                   </a>
                   <ul className="main-menu">
                     <li className="main-menu-active">
-                      <a href="index.html">Home</a>
+                      <Link to="/">Home</Link>
                       <ul className="sub-menu">
-                        <li><a href="index.html">Homepage v1</a></li>
+                        <li><Link to="/">Homepage v1</Link></li>
                         <li><a href="home-02.html">Homepage v2</a></li>
                         <li><a href="home-03.html">Homepage v3</a></li>
                       </ul>
@@ -187,6 +173,7 @@ const Header = props =>{
                           <a className="nav-link" data-toggle="pill" href="#news-4" role="tab">Technology</a>
                           <a className="nav-link" data-toggle="pill" href="#news-5" role="tab">Travel</a>
                         </div>
+
                         <div className="tab-content">
                           <div className="tab-pane show active" id="news-0" role="tabpanel">
                             <div className="row">
@@ -816,7 +803,7 @@ const Header = props =>{
                       </div>
                     </li>
                     <li className="mega-menu-item">
-                      <a href="category-02.html">Entertainment </a>
+                      <Link to="/category">Entertainment</Link>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
                           <a className="nav-link active" data-toggle="pill" href="#enter-1" role="tab">All</a>
@@ -1359,7 +1346,7 @@ const Header = props =>{
                       </div>
                     </li>
                     <li className="mega-menu-item">
-                      <a href="category-02.html">Travel</a>
+                      <Link to="/category">Travel</Link>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
                           <a className="nav-link active" data-toggle="pill" href="#travel-1" role="tab">All</a>
@@ -1692,7 +1679,7 @@ const Header = props =>{
                       </div>
                     </li>
                     <li className="mega-menu-item">
-                      <a href="category-02.html">Video</a>
+                      <Link to="/category">Video</Link>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
                           <a className="nav-link active" data-toggle="pill" href="#video-1" role="tab">All</a>
@@ -1809,14 +1796,14 @@ const Header = props =>{
                       <a href="#">Features</a>
                       <ul className="sub-menu">
                         <li><a href="category-01.html">Category Page v1</a></li>
-                        <li><a href="category-02.html">Category Page v2</a></li>
+                        <li><Link to="/category">Category Page v2</Link></li>
                         <li><a href="blog-grid.html">Blog Grid Sidebar</a></li>
                         <li><a href="blog-list-01.html">Blog List Sidebar v1</a></li>
                         <li><a href="blog-list-02.html">Blog List Sidebar v2</a></li>
-                        <li><a href="blog-detail-01.html">Blog Detail Sidebar</a></li>
+                        <li><Link to="/articleDetail">Blog Detail Sidebar</Link></li>
                         <li><a href="blog-detail-02.html">Blog Detail No Sidebar</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/contact">Contact Us</Link></li>
                       </ul>
                     </li>
                   </ul>

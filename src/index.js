@@ -1,22 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Produce_Detail from './Pages/ProductDetail'
-import Home from './Pages/Home'
-import Category from './Pages/Category'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
+import ArticleDetail from './pages/ArticleDetail'
+import Home from './pages/Home'
+import Category from './pages/Category'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Route path= "/Home" component ={Home}/>
-      <Route path= "/Category" component ={Category}/>
-      <Route path= "/About" component ={About}/>
-      <Route path= "/Contact" component ={Contact}/>
-      <Route path= "/Product_detail" component ={Produce_Detail}/>
+      <Route exact path= "/" component ={Home}/>
+      <Route exact path= "/category" component ={Category}/>
+      <Route exact path= "/about" component ={About}/>
+      <Route exact path= "/contact" component ={Contact}/>
+      <Route exact path= "/articleDetail" component ={ArticleDetail}/>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

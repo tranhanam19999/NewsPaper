@@ -7,7 +7,6 @@ const Footer = props => {
 
     return(
         <div>
-        {/* Footer */}
         <footer>
           <div className="bg2 p-t-40 p-b-25">
             <div className="container">
@@ -145,7 +144,7 @@ const Footer = props => {
             </div>
           </div>
         </footer>
-        {/* Back to top */}
+        
         <div className={"btn-back-to-top"} id="myBtn">
           <span className="symbol-btn-back-to-top">
             <span className="fas fa-angle-up" />
