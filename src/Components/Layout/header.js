@@ -166,12 +166,24 @@ const Header = props =>{
                       <a href="category-01.html">News</a>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
-                          <a className="nav-link active" data-toggle="pill" href="#news-0" role="tab">All</a>
-                          <a className="nav-link" data-toggle="pill" href="#news-1" role="tab">Entertaiment</a>
-                          <a className="nav-link" data-toggle="pill" href="#news-2" role="tab">Fashion</a>
-                          <a className="nav-link" data-toggle="pill" href="#news-3" role="tab">Life Style</a>
-                          <a className="nav-link" data-toggle="pill" href="#news-4" role="tab">Technology</a>
-                          <a className="nav-link" data-toggle="pill" href="#news-5" role="tab">Travel</a>
+                          <a className={category == 'All' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('All')}
+                          data-toggle="pill" href="#news-0" role="tab">All</a>
+
+                          <a className={category == 'Entertaiment' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Entertaiment')} 
+                          data-toggle="pill" href="#news-1" role="tab">Entertaiment</a>
+                          
+                          <a className={category == 'Fashion' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Fashion')}
+                          data-toggle="pill" href="#news-2" role="tab">Fashion</a>
+
+                          <a className={category == 'Life Style' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Life Style')}
+                          data-toggle="pill" href="#news-3" role="tab">Life Style</a>
+
+                          <a className={category == 'Technology' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Technology')}
+                          data-toggle="pill" href="#news-4" role="tab">Technology</a>
+
+                          <a className={category == 'Travel' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Travel')}
+                          data-toggle="pill" href="#news-5" role="tab">Travel</a>
+
                         </div>
 
                         <div className="tab-content">
