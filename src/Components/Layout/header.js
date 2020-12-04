@@ -187,7 +187,7 @@ const Header = props =>{
                         </div>
 
                         <div className="tab-content">
-                          <div className="tab-pane show active" id="news-0" role="tabpanel">
+                          <div className={category == 'All' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('All')} id="news-0" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -291,7 +291,7 @@ const Header = props =>{
                               </div>
                             </div>
                           </div>
-                          <div className="tab-pane" id="news-1" role="tabpanel">
+                          <div className={category == 'Entertaiment' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('Entertaiment')} id="news-1" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -395,7 +395,7 @@ const Header = props =>{
                               </div>
                             </div>
                           </div>
-                          <div className="tab-pane" id="news-2" role="tabpanel">
+                          <div className={category == 'Fashion' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('Fashion')} id="news-2" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -499,7 +499,7 @@ const Header = props =>{
                               </div>
                             </div>
                           </div>
-                          <div className="tab-pane" id="news-3" role="tabpanel">
+                          <div className={category == 'Life Style' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('Life Style')} id="news-3" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -603,7 +603,7 @@ const Header = props =>{
                               </div>
                             </div>
                           </div>
-                          <div className="tab-pane" id="news-4" role="tabpanel">
+                          <div className={category == 'Technology' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('Technology')} id="news-4" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -707,7 +707,7 @@ const Header = props =>{
                               </div>
                             </div>
                           </div>
-                          <div className="tab-pane" id="news-5" role="tabpanel">
+                          <div className={category == 'Travel' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('Travel')} id="news-5" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -818,12 +818,15 @@ const Header = props =>{
                       <Link to="/category">Entertainment</Link>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
-                          <a className="nav-link active" data-toggle="pill" href="#enter-1" role="tab">All</a>
-                          <a className="nav-link" data-toggle="pill" href="#enter-2" role="tab">Game</a>
-                          <a className="nav-link" data-toggle="pill" href="#enter-3" role="tab">Celebrity</a>
+                          <a className={category == 'All' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('All')}
+                           data-toggle="pill" href="#enter-1" role="tab">All</a>
+                          <a className={category == 'Game' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Game')}
+                           data-toggle="pill" href="#enter-2" role="tab">Game</a>
+                          <a className={category == 'Celebrity' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Celebrity')}
+                           data-toggle="pill" href="#enter-3" role="tab">Celebrity</a>
                         </div>
                         <div className="tab-content">
-                          <div className="tab-pane show active" id="enter-1" role="tabpanel">
+                          <div className={category == 'All' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('All')} id="enter-1" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -927,7 +930,7 @@ const Header = props =>{
                               </div>
                             </div>
                           </div>
-                          <div className="tab-pane" id="enter-2" role="tabpanel">
+                          <div className={category == 'Game' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('Game')} id="enter-2" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -1031,7 +1034,7 @@ const Header = props =>{
                               </div>
                             </div>
                           </div>
-                          <div className="tab-pane" id="enter-3" role="tabpanel">
+                          <div className={category == 'Celebrity' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('Celebrity')} id="enter-3" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -1142,11 +1145,13 @@ const Header = props =>{
                       <a href="category-01.html">Business</a>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
-                          <a className="nav-link active" data-toggle="pill" href="#business-1" role="tab">All</a>
-                          <a className="nav-link" data-toggle="pill" href="#business-2" role="tab">Economy</a>
+                          <a className={category == 'All' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('All')}
+                           data-toggle="pill" href="#business-1" role="tab">All</a>
+                          <a className={category == 'Economy' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Economy')}
+                           data-toggle="pill" href="#business-2" role="tab">Economy</a>
                         </div>
                         <div className="tab-content">
-                          <div className="tab-pane show active" id="business-1" role="tabpanel">
+                          <div className={category == 'All' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('All')} id="business-1" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -1250,7 +1255,7 @@ const Header = props =>{
                               </div>
                             </div>
                           </div>
-                          <div className="tab-pane" id="business-2" role="tabpanel">
+                          <div className={category == 'Economy' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('Economy')} id="business-2" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -1361,11 +1366,13 @@ const Header = props =>{
                       <Link to="/category">Travel</Link>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
-                          <a className="nav-link active" data-toggle="pill" href="#travel-1" role="tab">All</a>
-                          <a className="nav-link" data-toggle="pill" href="#travel-2" role="tab">Hotels</a>
+                          <a className={category == 'All' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('All')}
+                           data-toggle="pill" href="#travel-1" role="tab">All</a>
+                          <a className={category == 'Hotels' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Hotels')}
+                           data-toggle="pill" href="#travel-2" role="tab">Hotels</a>
                         </div>
                         <div className="tab-content">
-                          <div className="tab-pane show active" id="travel-1" role="tabpanel">
+                          <div className={category == 'All' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('All')} id="travel-1" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
@@ -1469,7 +1476,7 @@ const Header = props =>{
                               </div>
                             </div>
                           </div>
-                          <div className="tab-pane" id="travel-2" role="tabpanel">
+                          <div className={category == 'Hotels' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('Hotels')} id="travel-2" role="tabpanel">
                             <div className="row">
                               <div className="col-3">
                                 <div>
