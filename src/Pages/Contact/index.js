@@ -1,24 +1,22 @@
-import React, {Component} from 'react';
-import Header from '../../Components/Layout/header'
-import Footer from '../../Components/Layout/footer'
-import Search from '../../Components/Search/search'
-import PopularPosts from '../../Components/PopularPosts/popularposts';
-import Breadcumb from '../../Components/Breadcumb/breadcumb';
+import React from 'react';
+import Header from '../../components/Layout/header'
+import Footer from '../../components/Layout/footer'
+import PopularPosts from '../../components/PopularPosts/popularposts';
+import Breadcumb from '../../components/Breadcumb/breadcumb';
 
-class Contact extends Component { 
-    render() {
+const Contact = () => { 
+
         return (
             <div className="animsition">
         <Header/>
-        {/* Breadcrumb */}
         <Breadcumb label1 = "Contact Us"/>
-        {/* Page heading */}
+        
         <div className="container p-t-4 p-b-40">
           <h2 className="f1-l-1 cl2">
             Contact Us
           </h2>
         </div>
-        {/* Content */}
+        
         <section className="bg0 p-b-60">
           <div className="container">
             <div className="row justify-content-center">
@@ -35,20 +33,17 @@ class Contact extends Component {
                   </form>
                 </div>
               </div>
-              {/* Sidebar */}
+              
               <div className="col-md-5 col-lg-4 p-b-80">
                 <div className="p-l-10 p-rl-0-sr991">
-                  {/* Popular Posts */}
                   <PopularPosts/>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        {/* Footer */}
         <Footer/>
             </div>
         );
     }
-}
 export default Contact;
