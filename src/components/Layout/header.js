@@ -21,8 +21,8 @@ const Header = props =>{
                   </span>
                   <Link to="/about" className="left-topbar-item">About</Link>
                   <Link to="/contact" className="left-topbar-item">Contact</Link>
-                  <Link to="#" className="left-topbar-item">Sing up</Link>
-                  <Link to="#" className="left-topbar-item">Log in</Link>
+                  <Link to="/login" className="left-topbar-item">Log in</Link>
+                  <Link to="/register" className="left-topbar-item">Register</Link>
                 </div>
                 <div className="right-topbar">
                   <a href="#">
