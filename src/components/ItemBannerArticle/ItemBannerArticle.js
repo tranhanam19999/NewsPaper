@@ -17,7 +17,7 @@ const ItemBannerArticle = (props) => {
           </a>
           <h3 class={props.typeItem == "children1" ? " how1-child2 m-t-14" : "" + props.typeItem == "second" ? "how1-child2 m-t-14" : props.typeItem == "children" ? "how1-child2 m-t-14" : "how1-child2 m-t-14 m-b-10"}>
             <a
-              href="blog-detail-01.html"
+              href="/articleDetail"
               class={props.typeItem == "children1" ? " how-txt1 size-h-1 f1-m-1 cl0 hov-cl10 trans-03" : "" + props.typeItem == "second" ? " how-txt1 size-a-7 f1-l-2 cl0 hov-cl10 trans-03" : "" + props.typeItem == "children" ? " how-txt1 size-h-1 f1-m-1 cl0 hov-cl10 trans-03" : " how-txt1 size-a-6 f1-l-1 cl0 hov-cl10 trans-03" }
             >
               Microsoft quisque at ipsum vel orci eleifend ultrices
