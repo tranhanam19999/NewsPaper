@@ -10,7 +10,7 @@ const ArticleDetail = () => {
         return (
             <div>
               <Header/>
-        <Breadcumb label = "Blog" label1 = "Nulla non interdum metus non laoreet nisi tellus eget aliquam lorem pellentesque"/>
+        <Breadcumb label = "Bài Viết" label1 = "Đánh giá chi tiết Samsung Galaxy A42 5G: Chiếc điện thoại 5G rẻ nhất của Samsung có khiến bạn say mê?"/>
         
         <section className="bg0 p-b-140 p-t-10">
           <div className="container">
@@ -20,10 +20,10 @@ const ArticleDetail = () => {
                   
                   <div className="p-b-70">
                     <a href="#" className="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
-                      Technology
+                      Công nghệ
                     </a>
                     <h3 className="f1-l-3 cl2 p-b-16 p-t-33 respon2">
-                      Nulla non interdum metus non laoreet nisi tellus eget aliquam lorem pellentesque
+                      Đánh giá chi tiết Samsung Galaxy A42 5G: Chiếc điện thoại 5G rẻ nhất của Samsung có khiến bạn say mê?
                     </h3>
                     <div className="flex-wr-s-s p-b-40">
                       <span className="f1-s-3 cl8 m-r-15">
@@ -46,32 +46,32 @@ const ArticleDetail = () => {
                       <img src="images/blog-list-01.jpg" alt="IMG" />
                     </div>
                     <p className="f1-s-11 cl6 p-b-25">
-                      Curabitur volutpat bibendum molestie. Vestibulum ornare gravida semper. Aliquam a dui suscipit, fringilla metus id, maximus leo. Vivamus sapien arcu, mollis eu pharetra vitae, condimentum in orci. Integer eu sodales dolor. Maecenas elementum arcu eu convallis rhoncus. Donec tortor sapien, euismod a faucibus eget, porttitor quis libero. 
+                      Samsung vẫn giữ nguyên tỉ lệ khung hình của chiếc điện thoại Samsung Galaxy A42 5G so với thế hệ tiền nhiệm là chiếc Samsung Galaxy A41, tuy nhiên màn hình điện thoại của Samsung Galaxy A42 5G lại có kích thước lớn hơn kha khá .Điều này có thể được nhận thấy rõ ràng khi so sánh giữa Galaxy A41 và Galaxy A42 5G về kích thước cũng như trọng lượng.
                     </p>
                     <p className="f1-s-11 cl6 p-b-25">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet est vel orci luctus sollicitudin. Duis eleifend vestibulum justo, varius semper lacus condimentum dictum. Donec pulvinar a magna ut malesuada. In posuere felis diam, vel sodales metus accumsan in. Duis viverra dui eu pharetra pellentesque. Donec a eros leo. Quisque sed ligula vitae lorem efficitur faucibus. Praesent sit amet imperdiet ante. Nulla id tellus auctor, dictum libero a, malesuada nisi. Nulla in porta nibh, id vestibulum ipsum. Praesent dapibus tempus erat quis aliquet. Donec ac purus id sapien condimentum feugiat.
+                      Nếu Galaxy A41 chỉ có màn hình 6.1 inch và khối lượng 152 g thì Galaxy A42 5G kích thước màn hình đã được nhà sản xuất nâng cấp lên đến 6.6 inch và khối lượng cũng nặng hơn, ở mức 193 g. Với nâng cấp này, giúp cho chiếc điện thoại có màn hình hiển thị lớn hơn và cảm giác cầm nắm cũng đầm tay hơn. Ngoài những yếu tố khác biệt về trên thì Samsung Galaxy A42 5G vẫn có viền màn hình được xử lý mỏng và camera hình giọt nước.
                     </p>
                     <p className="f1-s-11 cl6 p-b-25">
-                      Praesent vel mi bibendum, finibus leo ac, condimentum arcu. Pellentesque sem ex, tristique sit amet suscipit in, mattis imperdiet enim. Integer tempus justo nec velit fringilla, eget eleifend neque blandit. Sed tempor magna sed congue auctor. Mauris eu turpis eget tortor ultricies elementum. Phasellus vel placerat orci, a venenatis justo. Phasellus faucibus venenatis nisl vitae vestibulum. Praesent id nibh arcu. Vivamus sagittis accumsan felis, quis vulputate
+                      Ở mặt lưng điện thoại, Samsung khá sáng tạo khi sử dụng hiệu ứng các điểm chấm đặc biệt. Theo đó, phần mặt lưng được chia ra làm 4 phần. Phần trên cùng là phần màu trơn hoàn toàn. Trong khi các phần ở phía dưới có các mẫu chấm với cường độ khác nhau. Đồng thời, khi có ánh sáng chiếu đến, thì mặt lưng sẽ tạo nên hiện tượng khúc xạ và phản chiếu bảy sắc cầu vồng trông khá bắt mắt. 
                     </p>
                     
                     <div className="flex-s-s p-t-12 p-b-15">
                       <span className="f1-s-12 cl5 m-r-8">
-                        Tags:
+                        Thẻ:
                       </span>
                       <div className="flex-wr-s-s size-w-0">
                         <a href="#" className="f1-s-12 cl8 hov-link1 m-r-15">
-                          Streetstyle
+                          Công Nghệ
                         </a>
                         <a href="#" className="f1-s-12 cl8 hov-link1 m-r-15">
-                          Crafts
+                          Tin Tức
                         </a>
                       </div>
                     </div>
                     
                     <div className="flex-s-s">
                       <span className="f1-s-12 cl5 p-t-1 m-r-15">
-                        Share:
+                        Chia sẻ:
                       </span>
                       <div className="flex-wr-s-s size-w-0">
                         <a href="#" className="dis-block f1-s-13 cl0 bg-facebook borad-3 p-tb-4 p-rl-18 hov-btn1 m-r-3 m-b-3 trans-03">
@@ -96,10 +96,10 @@ const ArticleDetail = () => {
                   
                   <div>
                     <h4 className="f1-l-4 cl3 p-b-12">
-                      Leave a Comment
+                      Bình luận
                     </h4>
                     <p className="f1-s-13 cl8 p-b-40">
-                      Your email address will not be published. Required fields are marked *
+                      Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *
                     </p>
                     <form>
                       <textarea className="bo-1-rad-3 bocl13 size-a-15 f1-s-13 cl5 plh6 p-rl-18 p-tb-14 m-b-20" name="msg" placeholder="Comment..." defaultValue={""} />
@@ -107,7 +107,7 @@ const ArticleDetail = () => {
                       <input className="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text" name="email" placeholder="Email*" />
                       <input className="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text" name="website" placeholder="Website" />
                       <button className="size-a-17 bg2 borad-3 f1-s-12 cl0 hov-btn1 trans-03 p-rl-15 m-t-10">
-                        Post Comment
+                        Gửi bình luận
                       </button>
                     </form>
                   </div>
@@ -120,33 +120,33 @@ const ArticleDetail = () => {
                   <div className="p-b-60">
                     <div className="how2 how2-cl4 flex-s-c">
                       <h3 className="f1-m-2 cl3 tab01-title">
-                        Category
+                        Thể Loại
                       </h3>
                     </div>
                     <ul className="p-t-35">
                       <li className="how-bor3 p-rl-4">
                         <a href="#" className="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
-                          Fashion
+                          Thời Trang
                         </a>
                       </li>
                       <li className="how-bor3 p-rl-4">
                         <a href="#" className="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
-                          Beauty
+                          Sắc đẹp
                         </a>
                       </li>
                       <li className="how-bor3 p-rl-4">
                         <a href="#" className="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
-                          Street Style
+                          Phong Cách Đường Phố
                         </a>
                       </li>
                       <li className="how-bor3 p-rl-4">
                         <a href="#" className="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
-                          Life Style
+                          Cách Sống
                         </a>
                       </li>
                       <li className="how-bor3 p-rl-4">
                         <a href="#" className="dis-block f1-s-10 text-uppercase cl2 hov-cl10 trans-03 p-tb-13">
-                          DIY &amp; Crafts
+                          DIY &amp; Đồ Thủ Công
                         </a>
                       </li>
                     </ul>
@@ -155,7 +155,7 @@ const ArticleDetail = () => {
                   <div className="p-b-37">
                     <div className="how2 how2-cl4 flex-s-c">
                       <h3 className="f1-m-2 cl3 tab01-title">
-                        Archive
+                        Kho Lưu Trữ
                       </h3>
                     </div>
                     <ul className="p-t-32">

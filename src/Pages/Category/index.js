@@ -11,10 +11,10 @@ const Category = () => {
     return(
       <div className="animsition">
         <Header/>
-        <Breadcumb label = "Category" label1 = "Entertaiment"/>
+        <Breadcumb label = "Thể Loại" label1 = "Giải Trí"/>
         <div className="container p-t-4 p-b-40">
           <h2 className="f1-l-1 cl2">
-            Entertaiment
+            Giải Trí
           </h2>
         </div>
         

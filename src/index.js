@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import ArticleDetail from './Pages/ArticleDetail'
-import Home from './Pages/Home'
-import Category from './Pages/Category'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
+import ArticleDetail from './pages/ArticleDetail'
+import Home from './pages/Home'
+import Category from './pages/Category'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
-import Login from './Pages/Auth/login'
-import Register from './Pages/Auth/register'
+import Login from './pages/Auth/login'
+import Register from './pages/Auth/register'
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 

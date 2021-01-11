@@ -3,7 +3,7 @@ const PopularPosts = props => {
         <div className="p-b-30">
                     <div className="how2 how2-cl4 flex-s-c">
                       <h3 className="f1-m-2 cl3 tab01-title">
-                        Popular Post
+                        Bài Viết Phổ Biến
                       </h3>
                     </div>
                     <ul className="p-t-35">
