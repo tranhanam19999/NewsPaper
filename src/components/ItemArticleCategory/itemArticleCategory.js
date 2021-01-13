@@ -25,7 +25,7 @@ const ItemArticleCategory = props => {
                 Curabitur volutpat bibendum molestie. Vestibulum ornare gravida semper. Aliquam a dui suscipit, fringilla metus id, maximus leo.
             </p>
             <a href="blog-detail-01.html" className="f1-s-1 cl9 hov-cl10 trans-03">
-                Read More
+                Đọc Thêm
                 <i className="m-l-2 fa fa-long-arrow-alt-right" />
             </a>
             </div>

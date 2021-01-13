@@ -9,10 +9,10 @@ const About = () => {
       return (
           <div className="animsition">
       <Header/>
-      <Breadcumb label1 = "About Us"/>
+      <Breadcumb label1 = "Giới Thiệu"/>
       <div className="container p-t-4 p-b-35">
         <h2 className="f1-l-1 cl2">
-          About Us
+          Giới Thiệu Về Chúng Tôi
         </h2>
       </div>
       <section className="bg0 p-b-110">
@@ -21,13 +21,13 @@ const About = () => {
             <div className="col-md-7 col-lg-8 p-b-30">
               <div className="p-r-10 p-r-0-sr991">
                 <p className="f1-s-11 cl6 p-b-25">
-                  Curabitur volutpat bibendum molestie. Vestibulum ornare gravida semper. Aliquam a dui suscipit, fringilla metus id, maximus leo. Vivamus sapien arcu, mollis eu pharetra vitae, condimentum in orci. Integer eu sodales dolor. Maecenas elementum arcu eu convallis rhoncus. Donec tortor sapien, euismod a faucibus eget, porttitor quis libero. 
+                  MAGNEWS là một trang tin tức được thành lập bới một nhóm sinh viên. Mục đích của trang web là cung cấp thông tin nhiều nhất có thể trên mọi lĩnh vực để người xem bắt kịp được xu hướng.
                 </p>
                 <p className="f1-s-11 cl6 p-b-25">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet est vel orci luctus sollicitudin. Duis eleifend vestibulum justo, varius semper lacus condimentum dictum. Donec pulvinar a magna ut malesuada. In posuere felis diam, vel sodales metus accumsan in. Duis viverra dui eu pharetra pellentesque. Donec a eros leo. Quisque sed ligula vitae lorem efficitur faucibus. Praesent sit amet imperdiet ante. Nulla id tellus auctor, dictum libero a, malesuada nisi. Nulla in porta nibh, id vestibulum ipsum. Praesent dapibus tempus erat quis aliquet. Donec ac purus id sapien condimentum feugiat.
+                  Nhiều lĩnh vực được MAGNEWS liên tục cập nhật như Giải trí, Thời trang, Tin nóng, Kinh doanh, Du lịch, Công nghệ,... Chúng tôi liên tục cập nhật nhiều lĩnh vực mới, thông tin mới nhất lên trang web. Đảm bảo cho việc tìm hiểu thông tin của bạn đúng xu hướng hiện tại.
                 </p>
                 <p className="f1-s-11 cl6 p-b-25">
-                  Praesent vel mi bibendum, finibus leo ac, condimentum arcu. Pellentesque sem ex, tristique sit amet suscipit in, mattis imperdiet enim. Integer tempus justo nec velit fringilla, eget eleifend neque blandit. Sed tempor magna sed congue auctor. Mauris eu turpis eget tortor ultricies elementum. Phasellus vel placerat orci, a venenatis justo. Phasellus faucibus venenatis nisl vitae vestibulum. Praesent id nibh arcu. Vivamus sagittis accumsan felis, quis vulputate
+                  Và chúng tôi rất lấy làm vinh hạnh vì bạn đã ghé thăm và trở thành một thành viên của gia đình MAGNEWS. Nơi bạn có thể tìm thấy một lượng thông tin khổng lồ được chắt lọc cẩn thận. Mỗi lĩnh vực được chúng tôi tìm hiểu, thu thập và chắt lọc từ nhiều nguồn khác nhau từ trong nước đến ngoài nước. Đội ngũ tin tức của chúng tôi làm việc thường xuyên, liên tục. Chúng tôi tuy là những người trẻ nhưng có niềm đam mê và nhiệt huyết với công việc. Bằng sức trẻ, bằng kiến thức và đôi tay này, chúng tôi sẽ đem lại cho bạn nhiều tin tức bổ ích cho cuộc sống của bạn, của cộng đồng.
                 </p>
               </div>
             </div>

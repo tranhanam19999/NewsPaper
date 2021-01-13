@@ -16,7 +16,7 @@ const Home = () => {
         <div className="container">
           <div className="bg0 flex-wr-sb-c p-rl-20 p-tb-8">
             <div className="f2-s-1 p-r-30 size-w-0 m-tb-6 flex-wr-s-c">
-              <span className="text-uppercase cl2 p-r-8">Trending Now:</span>
+              <span className="text-uppercase cl2 p-r-8">Xu hướng hiện nay:</span>
               <span
                 className="dis-inline-block cl6 slide100-txt pos-relative size-w-0"
                 data-in="fadeInDown"
@@ -58,18 +58,18 @@ const Home = () => {
             <div className="row justify-content-center">
               <div className="col-md-10 col-lg-8">
                 <div className="p-b-20">
-                  <ArticleSecction label="Entertainment" label1 = "Celebrity" label2 = "Movies" label3 = "Music" label4 = "Games"/>
+                  <ArticleSecction label="Giải Trí" label1 = "Người Nổi Tiếng" label2 = "Phim" label3 = "Âm Nhạc" label4 = "Trò Chơi"/>
                   
-                  <ArticleSecction label="Business" label1 = "Finance" label2 = "Money & Markets" label3 = "Small Business"/>
+                  <ArticleSecction label="Kinh Doanh" label1 = "Tài Chính" label2 = "Tiền & Chợ" label3 = "Kinh Doanh Nhỏ"/>
                   
-                  <ArticleSecction label="Travel" label1 = "Hotels" label2 = "Flight" label3 = "Beachs" label4 = "Culture"/>
+                  <ArticleSecction label="Du Lịch" label1 = "Khách Sạn" label2 = "Chuyến Bay" label3 = "Bãi Biển" label4 = "Văn Hóa"/>
                 </div>
               </div>
               <div className="col-md-10 col-lg-4">
                 <div className="p-l-10 p-rl-0-sr991 p-b-20">
                   <div>
                     <div className="how2 how2-cl4 flex-s-c">
-                      <h3 className="f1-m-2 cl3 tab01-title">Most Popular</h3>
+                      <h3 className="f1-m-2 cl3 tab01-title">Phổ Biến Nhất</h3>
                     </div>
                     <ul className="p-t-35">
                       <li className="flex-wr-sb-s p-b-22">
@@ -142,7 +142,7 @@ const Home = () => {
                   </div>
                   <div className="p-t-50">
                     <div className="how2 how2-cl4 flex-s-c">
-                      <h3 className="f1-m-2 cl3 tab01-title">Stay Connected</h3>
+                      <h3 className="f1-m-2 cl3 tab01-title">Giữ Liên Lạc</h3>
                     </div>
                     <ul className="p-t-35">
                       <li className="flex-wr-sb-c p-b-20">
@@ -153,12 +153,12 @@ const Home = () => {
                           <span className="fab fa-facebook-f" />
                         </a>
                         <div className="size-w-3 flex-wr-sb-c">
-                          <span className="f1-s-8 cl3 p-r-20">6879 Fans</span>
+                          <span className="f1-s-8 cl3 p-r-20">6879 Người</span>
                           <a
                             href="#"
                             className="f1-s-9 text-uppercase cl3 hov-cl10 trans-03"
                           >
-                            Like
+                            THÍCH
                           </a>
                         </div>
                       </li>
@@ -171,13 +171,13 @@ const Home = () => {
                         </a>
                         <div className="size-w-3 flex-wr-sb-c">
                           <span className="f1-s-8 cl3 p-r-20">
-                            568 Followers
+                            568 Người theo dõi
                           </span>
                           <a
                             href="#"
                             className="f1-s-9 text-uppercase cl3 hov-cl10 trans-03"
                           >
-                            Follow
+                            THEO DÕI
                           </a>
                         </div>
                       </li>
@@ -190,13 +190,13 @@ const Home = () => {
                         </a>
                         <div className="size-w-3 flex-wr-sb-c">
                           <span className="f1-s-8 cl3 p-r-20">
-                            5039 Subscribers
+                            5039 Người đăng ký
                           </span>
                           <a
                             href="#"
                             className="f1-s-9 text-uppercase cl3 hov-cl10 trans-03"
                           >
-                            Subscribe
+                            ĐĂNG KÝ
                           </a>
                         </div>
                       </li>
@@ -225,7 +225,7 @@ const Home = () => {
             <div className="row justify-content-center">
               <div className="col-md-10 col-lg-8 p-b-20">
                 <div className="how2 how2-cl4 flex-s-c m-r-10 m-r-0-sr991">
-                  <h3 className="f1-m-2 cl3 tab01-title">Latest Articles</h3>
+                  <h3 className="f1-m-2 cl3 tab01-title">Các Bài Báo Mới Nhất</h3>
                 </div>
                 <div className="row p-t-35">
                   <div className="col-sm-6 p-r-25 p-r-15-sr991">
@@ -252,7 +252,7 @@ const Home = () => {
                 <div className="p-l-10 p-rl-0-sr991 p-b-20">
                   <div className="p-b-55">
                     <div className="how2 how2-cl4 flex-s-c m-b-35">
-                      <h3 className="f1-m-2 cl3 tab01-title">Featured Video</h3>
+                      <h3 className="f1-m-2 cl3 tab01-title">Video Nổi Bật</h3>
                     </div>
                     <div>
                       <div className="wrap-pic-w pos-relative">

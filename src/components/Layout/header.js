@@ -12,17 +12,17 @@ const Header = props =>{
                 <div className="left-topbar">
                   <span className="left-topbar-item flex-wr-s-c">
                     <span>
-                      New York, NY
+                      VietNam, HN
                     </span>
                     <img className="m-b-1 m-rl-8" src={img1} alt="IMG" />
                     <span>
                       HI 58° LO 56°
                     </span>
                   </span>
-                  <Link to="/about" className="left-topbar-item">About</Link>
-                  <Link to="/contact" className="left-topbar-item">Contact</Link>
-                  <Link to="/login" className="left-topbar-item">Log in</Link>
-                  <Link to="/register" className="left-topbar-item">Register</Link>
+                  <Link to="/about" className="left-topbar-item">Giới Thiệu</Link>
+                  <Link to="/contact" className="left-topbar-item">Liên Hệ</Link>
+                  <Link to="/login" className="left-topbar-item">Đăng Nhập</Link>
+                  <Link to="/register" className="left-topbar-item">Đăng Ký</Link>
                 </div>
                 <div className="right-topbar">
                   <a href="#">
@@ -58,19 +58,19 @@ const Header = props =>{
                 <li className="left-topbar">
                   <span className="left-topbar-item flex-wr-s-c">
                     <span>
-                      New York, NY
+                      VietNam, HN
                     </span>
-                    <img className="m-b-1 m-rl-8" src="images/icons/icon-night.png" alt="IMG" />
+                    <img className="m-b-1 m-rl-8" src={img1} alt="IMG" />
                     <span>
                       HI 58° LO 56°
                     </span>
                   </span>
                 </li>
                 <li className="left-topbar">
-                  <Link to="/about" className="left-topbar-item">About</Link>
-                  <Link to="/contact" className="left-topbar-item">Contact</Link>
-                  <Link to="#" className="left-topbar-item">Sing up</Link>
-                  <Link to="#" className="left-topbar-item">Log in</Link>
+                  <Link to="/about" className="left-topbar-item">Giới Thiệu</Link>
+                  <Link to="/contact" className="left-topbar-item">Liên Hệ</Link>
+                  <Link to="#" className="left-topbar-item">Đăng Nhập</Link>
+                  <Link to="#" className="left-topbar-item">Đăng Ký</Link>
                 </li>
                 <li className="right-topbar">
                   <a href="#">
@@ -93,20 +93,20 @@ const Header = props =>{
               <ul className="main-menu-m">
                 <li>
                   {/* <a href="index.html">Home</a> */}
-                  <Link to="/">Home</Link>
+                  <Link to="/">Trang Chủ</Link>
                  
                 </li>
                 <li>
-                <Link to="/category">News</Link>
+                <Link to="/category">Tin Tức</Link>
                 </li>
                 <li>
-                  <Link to="/category">Entertainment</Link>
+                  <Link to="/category">Giải Trí</Link>
                 </li>
                 <li>
-                <Link to="/category">Bussiness</Link>
+                <Link to="/category">Kinh Doanh</Link>
                 </li>
                 <li>
-                  <Link to="/category">Travel</Link>
+                  <Link to="/category">Du Lịch</Link>
                 </li>
                
                
@@ -128,30 +128,30 @@ const Header = props =>{
                   </a>
                   <ul className="main-menu">
                     <li className="main-menu-active">
-                      <Link to="/">Home</Link>
+                      <Link to="/">Trang Chủ</Link>
                      
                     </li>
                     <li className="mega-menu-item">
-                      <a href="/category">News</a>
+                      <a href="/category">Tin Tức</a>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
                           <a className={category == 'All' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('All')}
-                          data-toggle="pill" href="#news-0" role="tab">All</a>
+                          data-toggle="pill" href="#news-0" role="tab">Tất Cả</a>
 
                           <a className={category == 'Entertaiment' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Entertaiment')} 
-                          data-toggle="pill" href="#news-1" role="tab">Entertaiment</a>
+                          data-toggle="pill" href="#news-1" role="tab">Giải trí</a>
                           
                           <a className={category == 'Fashion' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Fashion')}
-                          data-toggle="pill" href="#news-2" role="tab">Fashion</a>
+                          data-toggle="pill" href="#news-2" role="tab">Thời Trang</a>
 
                           <a className={category == 'Life Style' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Life Style')}
-                          data-toggle="pill" href="#news-3" role="tab">Life Style</a>
+                          data-toggle="pill" href="#news-3" role="tab">Cách Sống</a>
 
                           <a className={category == 'Technology' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Technology')}
-                          data-toggle="pill" href="#news-4" role="tab">Technology</a>
+                          data-toggle="pill" href="#news-4" role="tab">Công nghệ</a>
 
                           <a className={category == 'Travel' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Travel')}
-                          data-toggle="pill" href="#news-5" role="tab">Travel</a>
+                          data-toggle="pill" href="#news-5" role="tab">Du Lịch</a>
 
                         </div>
 
@@ -784,15 +784,15 @@ const Header = props =>{
                       </div>
                     </li>
                     <li className="mega-menu-item">
-                      <Link to="/category">Entertainment</Link>
+                      <Link to="/category">Giải Trí</Link>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
                           <a className={category == 'All' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('All')}
-                           data-toggle="pill" href="#enter-1" role="tab">All</a>
+                           data-toggle="pill" href="#enter-1" role="tab">Tất Cả</a>
                           <a className={category == 'Game' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Game')}
-                           data-toggle="pill" href="#enter-2" role="tab">Game</a>
+                           data-toggle="pill" href="#enter-2" role="tab">Trò chơi</a>
                           <a className={category == 'Celebrity' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Celebrity')}
-                           data-toggle="pill" href="#enter-3" role="tab">Celebrity</a>
+                           data-toggle="pill" href="#enter-3" role="tab">Người Nổi Tiếng</a>
                         </div>
                         <div className="tab-content">
                           <div className={category == 'All' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('All')} id="enter-1" role="tabpanel">
@@ -1111,13 +1111,13 @@ const Header = props =>{
                       </div>
                     </li>
                     <li className="mega-menu-item">
-                    <Link to="/category">Bussiness</Link>
+                    <Link to="/category">Kinh Doanh</Link>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
                           <a className={category == 'All' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('All')}
-                           data-toggle="pill" href="#business-1" role="tab">All</a>
+                           data-toggle="pill" href="#business-1" role="tab">Tất Cả</a>
                           <a className={category == 'Economy' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Economy')}
-                           data-toggle="pill" href="#business-2" role="tab">Economy</a>
+                           data-toggle="pill" href="#business-2" role="tab">Kinh Tế</a>
                         </div>
                         <div className="tab-content">
                           <div className={category == 'All' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('All')} id="business-1" role="tabpanel">
@@ -1332,13 +1332,13 @@ const Header = props =>{
                       </div>
                     </li>
                     <li className="mega-menu-item">
-                      <Link to="/category">Travel</Link>
+                      <Link to="/category">Du Lịch</Link>
                       <div className="sub-mega-menu">
                         <div className="nav flex-column nav-pills" role="tablist">
                           <a className={category == 'All' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('All')}
-                           data-toggle="pill" href="#travel-1" role="tab">All</a>
+                           data-toggle="pill" href="#travel-1" role="tab">Tất Cả</a>
                           <a className={category == 'Hotels' ? "nav-link active" : "nav-link"} onMouseEnter={() => setCategory('Hotels')}
-                           data-toggle="pill" href="#travel-2" role="tab">Hotels</a>
+                           data-toggle="pill" href="#travel-2" role="tab">Khách Sạn</a>
                         </div>
                         <div className="tab-content">
                           <div className={category == 'All' ? "tab-pane show active" : "tab-pane"} onMouseEnter={() => setCategory('All')} id="travel-1" role="tabpanel">

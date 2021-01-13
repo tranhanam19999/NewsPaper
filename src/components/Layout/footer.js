@@ -19,10 +19,10 @@ const Footer = props => {
                   </div>
                   <div>
                     <p className="f1-s-1 cl11 p-b-16">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor magna eget elit efficitur, at accumsan sem placerat. Nulla tellus libero, mattis nec molestie at, facilisis ut turpis. Vestibulum dolor metus, tincidunt eget odio
+                      Chúng tôi cố gắng cung cấp nhiều thông tin nhất có thể cho bạn thông qua các tin tức được cập nhập thường xuyên trên nhiều lĩnh vực khác nhau nhằm giúp bạn bắt kịp xu hướng hiện nay...
                     </p>
                     <p className="f1-s-1 cl11 p-b-16">
-                      Any questions? Call us on (+1) 96 716 6879
+                      Mọi câu hỏi thắc mắc có thể gọi cho chúng tôi qua: (+1) 96 716 6879
                     </p>
                     <div className="p-t-15">
                       <a href="#" className="fs-18 cl11 hov-cl10 trans-03 m-r-8">
@@ -46,7 +46,7 @@ const Footer = props => {
                 <div className="col-sm-6 col-lg-4 p-b-20">
                   <div className="size-h-3 flex-s-c">
                     <h5 className="f1-m-7 cl0">
-                      Popular Posts
+                      Bài Viết Phổ Biến
                     </h5>
                   </div>
                   <ul>
@@ -100,33 +100,33 @@ const Footer = props => {
                 <div className="col-sm-6 col-lg-4 p-b-20">
                   <div className="size-h-3 flex-s-c">
                     <h5 className="f1-m-7 cl0">
-                      Category
+                      Thể Loại
                     </h5>
                   </div>
                   <ul className="m-t--12">
                     <li className="how-bor1 p-rl-5 p-tb-10">
                       <a href="#" className="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-                        Fashion (22)
+                        Thời Trang (22)
                       </a>
                     </li>
                     <li className="how-bor1 p-rl-5 p-tb-10">
                       <a href="#" className="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-                        Technology (29)
+                        Công Nghệ (29)
                       </a>
                     </li>
                     <li className="how-bor1 p-rl-5 p-tb-10">
                       <a href="#" className="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-                        Street Style (15)
+                        Phong Cách Đường Phố (15)
                       </a>
                     </li>
                     <li className="how-bor1 p-rl-5 p-tb-10">
                       <a href="#" className="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-                        Life Style (28)
+                        Cách Sống (28)
                       </a>
                     </li>
                     <li className="how-bor1 p-rl-5 p-tb-10">
                       <a href="#" className="f1-s-5 cl11 hov-cl10 trans-03 p-tb-8">
-                        DIY &amp; Crafts (16)
+                        DIY &amp; Đồ Thủ Công (16)
                       </a>
                     </li>
                   </ul>
@@ -137,9 +137,9 @@ const Footer = props => {
           <div className="bg11">
             <div className="container size-h-4 flex-c-c p-tb-15">
               <span className="f1-s-1 cl0 txt-center">
-                Copyright © 2018 
-                <a href="#" className="f1-s-1 cl10 hov-link1">
-                  Copyright © All rights reserved | This template is made with <i className="fa fa-heart" aria-hidden="true" /> by </a><a href="https://colorlib.com" target="_blank">Colorlib</a>
+                © 2018 
+                <a href="#" className="f1-s-1 cl10 hov-link1"> 
+                  © MAGNEWS | Trang web tin tức <i className="fa fa-heart" aria-hidden="true" /></a> <a href="https://colorlib.com" target="_blank">MAGNEWS</a>
               </span>
             </div>
           </div>
