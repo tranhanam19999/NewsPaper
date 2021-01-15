@@ -11,7 +11,7 @@ const Breadcumb = props => {
               {props.label1}
               </span>
             </div>
-            <Search />
+           
           </div>
         </div>
     )

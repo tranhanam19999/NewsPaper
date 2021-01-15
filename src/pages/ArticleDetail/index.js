@@ -29,8 +29,9 @@ const ArticleDetail = (props) => {
   }, []);
 
   
+  console.log(user, "user")
 
-  console.log(comment, 'comment')
+  console.log(user._id, 'user')
 
   const [cmt, setCmt] = useState("");
   const postComment = () => {

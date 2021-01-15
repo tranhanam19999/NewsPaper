@@ -1,4 +1,6 @@
 import ItemAticleParentType from "../ItemAticleParentType/itemAticleParentType";
+import { Link } from "react-router-dom";
+
 import ItemArticleChildrenType from "../ItemArticleChildrenType/itemArticleChildrenType";
 const ArticleSecction = props => {
    console.log(props.data, 'data parent')
@@ -68,13 +70,14 @@ const ArticleSecction = props => {
                           <ul className="dropdown-menu"></ul>
                         </li> */}
                       </ul>
-                      <a
-                        href="category-01.html"
+                 
+                      <Link
+                        to={{ pathname: `/${props.category}`, state: props.data }}
                         className="tab01-link f1-s-1 cl9 hov-cl10 trans-03"
                       >
                         Xem Tất Cả
                         <i className="fs-12 m-l-5 fa fa-caret-right" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="tab-content p-t-35">
                       <div className="tab-pane fade show active" id="tab1-1" role="tabpanel">

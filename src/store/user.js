@@ -55,11 +55,11 @@ export const loginuser = ( username, password ) => async dispatch => {
 export const registeruser = (name, username, password ) => async dispatch => {
   try {
     const res = await register(name,username, password)
-    if(res[0] != null) {
-      if (res[0]._id != null) {
+    if(res!= null) {
+      
         dispatch(registerSuccess(res))
        
-      }
+      
     }
     else {
       alert('Check input!')

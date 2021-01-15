@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { registeruser } from "../../store/user";
 import { Link, Redirect } from "react-router-dom";
-
+import axios from 'axios'
 const Register = props => {
     const dispatch = useDispatch();
 
@@ -12,10 +12,25 @@ const Register = props => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
+  //    axios.post('http://localhost:5000/user/create', {
+      
+  //        "fullName": "tdu",
+  //        "local": {
+  //            "username": "saf",
+  //            "password":"sf"
+  //        }
+       
+  //     })
+  // .then(function (response) {
+  //   console.log(response, "res");
+  // })
+  // .catch(function (error) {
+  //   console.log(error, "error");
+  // });
     if (user) {
         return (
           <>
-            <Redirect to="/" />
+            <Redirect to="/login" />
           </>
         );
       }   

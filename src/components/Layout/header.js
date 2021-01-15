@@ -24,9 +24,7 @@ const Header = (props) => {
 
   
   // const user = localStorage.getItem('user') ;
-  if(user){
-  console.log(user, user.fullName, "user header name")
-}
+
 
   
 
@@ -79,7 +77,7 @@ const Header = (props) => {
                 <span>HI 58° LO 56°</span>
               </span>
               <Link to="/about" className="left-topbar-item">
-                About
+                Chi tiết
               </Link>
               {/* <Link to="/contact" className="left-topbar-item">
                 Contact
@@ -90,7 +88,7 @@ const Header = (props) => {
                 </>
               ) : (
                 <Link to="/login" className="left-topbar-item">
-                  Log in
+                  Dăng nhập
                 </Link>
               )}
               {user ? (
@@ -105,11 +103,11 @@ const Header = (props) => {
                   catch (err) {
                     console.log('err ', err)
                   }}}>
-                  Log out
+                  Thóat
                 </Link>
               ) : (
                 <Link to="/register" className="left-topbar-item">
-                  Register
+                  Đăng kí
                 </Link>
               )}
             </div>
@@ -159,11 +157,11 @@ const Header = (props) => {
             </li>
             <li className="left-topbar">
               <Link to="/about" className="left-topbar-item">
-                About
+                Chi tiết
               </Link>
-              <Link to="/contact" className="left-topbar-item">
+              {/* <Link to="/contact" className="left-topbar-item">
                 Contact
-              </Link>
+              </Link> */}
               <Link to="#" className="left-topbar-item">
                 Sing up
               </Link>
@@ -198,17 +196,17 @@ const Header = (props) => {
             </li>
             <li>
               <Link to={{ pathname: `/entertainment`, state: articleEntertainment }}>
-                Entertainment
+                Giải trí
               </Link>
             </li>
             <li>
               <Link to={{ pathname: `/business`, state: articleBusiness }}>
-                Business
+                Kinh tế
               </Link>
             </li>
             <li>
               <Link to={{ pathname: `/travel`, state: articleTravel }}>
-                Travel
+                Du lịch
               </Link>
             </li>
           </ul>
@@ -233,10 +231,10 @@ const Header = (props) => {
               </a>
               <ul className="main-menu">
                 <li className="main-menu-active">
-                  <Link to="/">Home</Link>
+                  <Link to="/">Trang chủ </Link>
                 </li>
                 <li className="mega-menu-item">
-                  <a href="/">News</a>
+                  <a href="/">Tin mới</a>
                   <div className="sub-mega-menu">
                     <div></div>
 
@@ -285,7 +283,7 @@ const Header = (props) => {
                   <Link
                     to={{ pathname: `/entertainment`, state: articleEntertainment }}
                   >
-                    Entertainment
+                    Giaỉ trí
                   </Link>
 
                   <div className="sub-mega-menu">
@@ -314,7 +312,7 @@ const Header = (props) => {
                 </li>
                 <li className="mega-menu-item">
                   <Link to={{ pathname: `/business`, state: articleBusiness }}>
-                    Business
+                    Kinh tế
                   </Link>
 
                   <div className="sub-mega-menu">
@@ -343,7 +341,7 @@ const Header = (props) => {
                 </li>
                 <li className="mega-menu-item">
                   <Link to={{ pathname: `/travel`, state: articleTravel }}>
-                    Travel
+                    Du lịch
                   </Link>
                   <div className="sub-mega-menu">
                     <div></div>

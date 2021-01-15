@@ -79,7 +79,7 @@ const Home = () => {
               </span>
             </span>
           </div>
-          <Search />
+          {/* <Search /> */}
         </div>
       </div>
 
@@ -104,26 +104,29 @@ const Home = () => {
             <div className="col-md-10 col-lg-8">
               <div className="p-b-20">
                 <ArticleSecction
-                  label="Entertainment"
+                  label="Giải trí"
                   label1="Celebrity"
                   label2="Movies"
                   label3="Music"
                   label4="Games"
+                  category="entertainment"
                   data={articleEntertainment}
                 />
                 <ArticleSecction
-                  label="Business"
+                  label="Kinh tế"
                   label1="Finance"
                   label2="Money & Markets"
                   label3="Small Business"
+                  category="tusiness"
                   data={articleBusiness}
                 />
                 <ArticleSecction
-                  label="Travel"
+                  label="Du lịch"
                   label1="Hotels"
                   label2="Flight"
                   label3="Beachs"
                   label4="Culture"
+                  category="travel"
                   data={articleTravel}
                 />
               </div>
@@ -132,7 +135,7 @@ const Home = () => {
               <div className="p-l-10 p-rl-0-sr991 p-b-20">
                 <div>
                   <div className="how2 how2-cl4 flex-s-c">
-                    <h3 className="f1-m-2 cl3 tab01-title">Most Popular</h3>
+                    <h3 className="f1-m-2 cl3 tab01-title">Những diều cần lưu ý</h3>
                   </div>
                   <ul className="p-t-35">
                     <li className="flex-wr-sb-s p-b-22">
@@ -143,7 +146,7 @@ const Home = () => {
                         href="#"
                         className="size-w-3 f1-s-7 cl3 hov-cl10 trans-03"
                       >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                       Tuân thủ nguyên tắc công đồng
                       </a>
                     </li>
                     <li className="flex-wr-sb-s p-b-22">
@@ -154,7 +157,7 @@ const Home = () => {
                         href="#"
                         className="size-w-3 f1-s-7 cl3 hov-cl10 trans-03"
                       >
-                        Proin velit consectetur non neque
+                        Không được thực hiện hành vi xấu với website
                       </a>
                     </li>
                     <li className="flex-wr-sb-s p-b-22">
@@ -165,8 +168,7 @@ const Home = () => {
                         href="#"
                         className="size-w-3 f1-s-7 cl3 hov-cl10 trans-03"
                       >
-                        Nunc vestibulum, enim vitae condimentum volutpat
-                        lobortis ante
+                        Đọc hiều và nâng cao kiến thức
                       </a>
                     </li>
                     <li className="flex-wr-sb-s p-b-22">
@@ -177,7 +179,7 @@ const Home = () => {
                         href="#"
                         className="size-w-3 f1-s-7 cl3 hov-cl10 trans-03"
                       >
-                        Proin velit justo consectetur non neque elementum
+                        Cung cấp kiến thức bổ ít trên các lĩnh vực
                       </a>
                     </li>
                     <li className="flex-wr-sb-s p-b-22">
@@ -188,7 +190,7 @@ const Home = () => {
                         href="#"
                         className="size-w-3 f1-s-7 cl3 hov-cl10 trans-03"
                       >
-                        Proin velit consectetur non neque
+                       Sẳn sàng báo cáo khi phát hiên hành vi có ảnh huởng xâu
                       </a>
                     </li>
                   </ul>
@@ -222,7 +224,7 @@ const Home = () => {
           <div className="row justify-content-center">
             <div className="col-md-10 col-lg-8 p-b-20">
               <div className="how2 how2-cl4 flex-s-c m-r-10 m-r-0-sr991">
-                <h3 className="f1-m-2 cl3 tab01-title">Latest Articles</h3>
+                <h3 className="f1-m-2 cl3 tab01-title">Tin khác</h3>
               </div>
               <div className="row p-t-35">
                 {articleNew.map((item, idx) => {
@@ -269,7 +271,7 @@ const Home = () => {
                 </div>
 
                 <SubscribeEmail />
-                <Tag />
+                {/* <Tag /> */}
               </div>
             </div>
           </div>

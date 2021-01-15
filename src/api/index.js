@@ -79,7 +79,6 @@ export const register = (name, username, password) => {
       password: password,
     },
   };
-  console.log(body, "user");
 
   return fetch("http://localhost:5000/user/create", {
     method: "post",
@@ -88,8 +87,9 @@ export const register = (name, username, password) => {
     },
     body: JSON.stringify(body),
   }).then((res) => {
-    console.log(res, "register");
+    
     return res.json().then((value) => {
+      console.log(value, "register");
       return value;
     });
   });
