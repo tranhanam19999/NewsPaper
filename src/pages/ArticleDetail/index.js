@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { getArticel, getArticel } from "../../store/article";
+import { getcomment, addcomment } from "../../store/comment";
+import { getArticel, getArticelId } from "../../store/article";
 
 import Header from "../../components/Layout/header";
 import Footer from "../../components/Layout/footer";
@@ -10,67 +11,38 @@ import Breadcumb from "../../components/Breadcumb/breadcumb";
 // import { getArticelId } from "../../store/article";
 
 const ArticleDetail = (props) => {
-  // const dispatch = useDispatch();
 
-  // const articel = useSelector((state) => state.articel);
-  // let articleDetail = props.location.state
-  // useEffect(() => {
-  //   dispatch(getArticel());
-  // }, []);
-  // if (articel) {
-  // }
+  const dispatch = useDispatch();
+  const user = localStorage.getItem('user') ;
+  const comment = useSelector((state) => state.comment);
+  const articles = useSelector((state) => state.article);
+  
+  let data = props.location.state;
 
-  const articles = [
-    {
-      title: "Catch Me If You Can",
-      thumbnail: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-      alt_thumbnail: "http://dummyimage.com/250x250.png/dddddd/000000",
-      pictures: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-      content:
-        "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-      category: "Sports",
-      createByDate: 'error: invalid date "24/12/2020"',
-      status: true,
-    },
-    {
-      title: "Question of Silence, A (De stilte rond Christine M.)",
-      thumbnail: "http://dummyimage.com/250x250.png/ff4444/ffffff",
-      alt_thumbnail: "http://dummyimage.com/250x250.png/cc0000/ffffff",
-      pictures: "http://dummyimage.com/250x250.png/dddddd/000000",
-      content:
-        "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
-      category: "Sports",
-      createByDate: 'error: invalid date "24/12/2020"',
-      status: false,
-    },
-    {
-      title: "Virtuosity",
-      thumbnail: "http://dummyimage.com/250x250.png/cc0000/ffffff",
-      alt_thumbnail: "http://dummyimage.com/250x250.png/5fa2dd/ffffff",
-      pictures: "http://dummyimage.com/250x250.png/cc0000/ffffff",
-      content:
-        "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
-      category: "Fun",
-      createByDate: 'error: invalid date "24/12/2020"',
-      status: true,
-    },
-    
-  ];
+  useEffect(() => {
+    async function fetch(){
+      dispatch(getcomment(data._id));
+      // dispatch(getArticel());
+      
+
+
+    }
+    fetch();
+  }, []);
 
   
-  let data = props.location.state
 
+  console.log(comment, 'comment')
 
+  const [cmt, setCmt] = useState("");
+  const postComment = () => {
+    // dispatch(addcomment(user._id,data._id,cmt));
+    // dispatch(getArticelId(data._id));
+  };
 
-  const [cmt, setCmt] = useState('')
-
-  postComment = (body) => {
-    e.preventDefault()
-    
-    dispatch(addpost(body))
+  if (comment.lenght < 0) {
+    return(<div></div>)
   }
-  
-
 
   return (
     <div>
@@ -93,7 +65,7 @@ const ArticleDetail = (props) => {
                     Technology
                   </a>
                   <h3 className="f1-l-3 cl2 p-b-16 p-t-33 respon2">
-                    {data.title}
+                    {articles ? articles.title : data.title}
                   </h3>
                   <div className="flex-wr-s-s p-b-40">
                     <span className="f1-s-3 cl8 m-r-15">
@@ -101,7 +73,7 @@ const ArticleDetail = (props) => {
                         by John Alvarado
                       </a> */}
                       {/* <span className="m-rl-3">-</span> */}
-                    <span>{data.createByDate}</span>
+                      <span>{articles ? articles.createByDate : data.createByDate}</span>
                     </span>
                     <span className="f1-s-3 cl8 m-r-15">5239 Views</span>
                     <a href="#" className="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">
@@ -109,14 +81,9 @@ const ArticleDetail = (props) => {
                     </a>
                   </div>
                   <div className="wrap-pic-max-w p-b-30">
-                    <img src={data.thumbnail} alt={data.alt_thumbnail} />
+                    <img src={articles ? articles.thumbnail : data.thumbnail} alt="" />
                   </div>
-                  <p className="f1-s-11 cl6 p-b-25">
-                    {data.content}
-                  </p>
-                  
-
-                 
+                  <p className="f1-s-11 cl6 p-b-25">{data.content}</p>
 
                   <div className="flex-s-s">
                     <span className="f1-s-12 cl5 p-t-1 m-r-15">Share:</span>
@@ -152,6 +119,22 @@ const ArticleDetail = (props) => {
                     </div>
                   </div>
                 </div>
+                {comment.length == 0 ? null  : comment.map((item, idx) => {
+                  return (
+                    <div className="flex-wr-sb-s m-b-30">
+                      <div className="size-w-2">
+                        <h5 className="p-b-5">
+                          <p className="f1-s-5 cl3 hov-cl10 trans-03" style={{fontSize: 18}}>
+                            {item.content}
+                          </p>
+                        </h5>
+                        <span className="cl8">
+                          <span className="f1-s-3">{item.createByDate}</span>
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })}
 
                 <div>
                   <h4 className="f1-l-4 cl3 p-b-12">Leave a Comment</h4>
@@ -167,8 +150,11 @@ const ArticleDetail = (props) => {
                       defaultValue={""}
                       onChange={(e) => setCmt(e.target.value)}
                     />
-                    
-                    <button className="size-a-17 bg2 borad-3 f1-s-12 cl0 hov-btn1 trans-03 p-rl-15 m-t-10" onClick={postComment()}>
+
+                    <button
+                      className="size-a-17 bg2 borad-3 f1-s-12 cl0 hov-btn1 trans-03 p-rl-15 m-t-10"
+                      onClick={postComment()}
+                    >
                       Post Comment
                     </button>
                   </form>
@@ -178,7 +164,7 @@ const ArticleDetail = (props) => {
 
             <div className="col-md-10 col-lg-4 p-b-30">
               <div className="p-l-10 p-rl-0-sr991 p-t-70">
-                <PopularPosts  data={articles}/>
+                {/* <PopularPosts data={articles} /> */}
                 <Tag />
               </div>
             </div>

@@ -20,6 +20,9 @@ ReactDOM.render(
     <Router>
       <Route exact path= "/" component ={Home}/>
       <Route exact path= "/category" component ={Category}/>
+      <Route exact path= "/business" component ={Category}/>
+      <Route exact path= "/travel" component ={Category}/>
+      <Route exact path= "/entertainment" component ={Category}/>
       <Route exact path= "/about" component ={About}/>
       <Route exact path= "/contact" component ={Contact}/>
       <Route exact path= "/article-detail" component ={ArticleDetail}/>

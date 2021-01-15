@@ -7,7 +7,7 @@ const ItemArticleChildrenType = (props) => {
         to={{ pathname: `/article-detail`, state: props.data }}
         className="size-w-1 wrap-pic-w hov1 trans-03"
       >
-        <img src={props.data.thumbnail} alt={props.data.alt_thumbnail} />
+        <img src={props.data.thumbnail} alt="" />
       </Link>
       <div className="size-w-2">
         <h5 className="p-b-5">

@@ -8,13 +8,14 @@ const PopularPosts = (props) => {
       </div>
       <ul className="p-t-35">
         {props.data.map((item, idx) => {
+          if(idx < 3 ){
           return (
             <li className="flex-wr-sb-s p-b-30">
               <Link
                 to={{ pathname: `/article-detail`, state: props.data }}
                 className="size-w-10 wrap-pic-w hov1 trans-03"
               >
-                <img src={item.thumbnail} alt={item.alt_thumbnail} />
+                <img src={item.thumbnail} alt="" style={{width: "100%", height: "100%"}} />
               </Link>
               <div className="size-w-11">
                 <h6 className="p-b-4">
@@ -38,6 +39,7 @@ const PopularPosts = (props) => {
               </div>
             </li>
           );
+        }
         })}
       </ul>
     </div>

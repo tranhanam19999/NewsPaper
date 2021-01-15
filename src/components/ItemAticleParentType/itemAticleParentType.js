@@ -4,7 +4,7 @@ const ItemAticleParentType = (props) => {
   return (
     <div className="m-b-30">
       <Link to={{ pathname: `/article-detail`, state: props.data }} className="wrap-pic-w hov1 trans-03">
-        <img src={props.data.thumbnail} alt={props.data.alt_thumbnail} />
+        <img src={props.data.thumbnail} alt=""  />
       </Link>
       <div className="p-t-20">
         <h5 className="p-b-5">

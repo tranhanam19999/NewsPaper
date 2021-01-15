@@ -24,9 +24,9 @@ export const getArticel = () => async dispatch => {
     }
 }
 
-export const getArticelId = () => async dispatch => {
+export const getArticelId = (id) => async dispatch => {
     try {
-        const res = await getArticelOne()
+        const res = await getArticelOne(id)
         dispatch(getProps(res))
     }
     catch (e) {

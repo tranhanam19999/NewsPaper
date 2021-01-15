@@ -1,21 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { loginuser } from "../../store/user";
+import { Link, Redirect } from "react-router-dom";
+import axios from 'axios'
+const Login = (props) => {
+  const dispatch = useDispatch();
 
-const Login = props => {
-    return(
-        <div style={{maxWidth: 400, margin: "100px auto"}}>
-        <div class="login">
-            <div class="login-triangle"></div>
-            
-            <h2 class="login-header">Log in</h2>
+  const user = useSelector(state =>  state.user)
 
-            <form class="login-container">
-                <p><input type="email" placeholder="Email"/></p>
-                <p><input type="password" placeholder="Password"/></p>
-                <p><input type="submit" value="Log in"/></p>
-            </form>
-        </div>
-        </div>
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const login = () => {
+    dispatch(loginuser(username,password))
+ 
+  }
+
+
+  if (user) {
+    return (
+      <>
+        <Redirect to="/" />
+      </>
     );
-}
+  }
+  return (
+    <div style={{ maxWidth: 400, margin: "100px auto" }}>
+      <div class="login">
+        <div class="login-triangle"></div>
+        <h2 class="login-header">Log in</h2>
+        <div class="login-container">
+          <p>
+            <input
+              type="text"
+              placeholder="Email"
+              name="username"
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </p>
+          <p>
+            <input type="submit" value="Log in" onClick={() => login()} />
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Login
+export default Login;

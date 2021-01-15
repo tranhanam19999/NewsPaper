@@ -28,12 +28,12 @@ console.log(articles, 'data')
         <div className="container">
           <div className="row m-rl--1">
             <div className="col-12 p-rl-1 p-b-2">
-              <ItemBannerArticle typeItem="first" />
+              <ItemBannerArticle typeItem="first" data={articles[0]}/>
             </div>
-            <ItemBannerArticle typeItem="children1" />
-            <ItemBannerArticle typeItem="children1" />
-            <ItemBannerArticle typeItem="children1" />
-            <ItemBannerArticle typeItem="children1" />
+            <ItemBannerArticle typeItem="children1"  data={articles[1]}/>
+            <ItemBannerArticle typeItem="children1"  data={articles[2]}/>
+            <ItemBannerArticle typeItem="children1"  data={articles[0]}/>
+            <ItemBannerArticle typeItem="children1"  data={articles[1]}/>
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ console.log(articles, 'data')
                   })}
                 </div>
               </div>
-              <Pagination />
+              {/* <Pagination /> */}
             </div>
             <div className="col-md-10 col-lg-4 p-b-80">
               <div className="p-l-10 p-rl-0-sr991">

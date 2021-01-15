@@ -7,7 +7,7 @@ const ItemArticleCategory = (props) => {
         to={{ pathname: `/article-detail`, state: props.data }}
         className="wrap-pic-w hov1 trans-03"
       >
-        <img src={props.data.thumbnail} alt={props.data.alt_thumbnail} />
+        <img src={props.data.thumbnail} alt="" />
       </Link>
       <div className="flex-col-s-c p-t-16">
         <h5 className="p-b-5 txt-center">

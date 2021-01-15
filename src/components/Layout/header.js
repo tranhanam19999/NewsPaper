@@ -1,23 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getArticel } from "../../store/article";
+import { logout } from "../../store/user";
+
 
 import {
   BrowserRouter as Router,
   Route,
   Link,
   NavLink,
+  Redirect
 } from "react-router-dom";
 import img1 from "../../assets/images/icons/icon-night.png";
 import logo from "../../assets/images/icons/logo-01.png";
 import imgbanner from "../../assets/images/banner-01.jpg";
 import ItemArticleHeader from "../ItemArticleHeader/itemArticleHeader";
 
-
-
 const Header = (props) => {
-
+  // const user = useSelector((state) => {
+  //   return state.user;
+  // });
   
+  
+  const user = localStorage.getItem('user') ;
+
 
   const [category, setCategory] = useState("All");
 
@@ -30,21 +36,18 @@ const Header = (props) => {
   const articleTravel = [];
   const articleNew = [];
 
-  useEffect( () => {
-    async function fetch(){
+  useEffect(() => {
+    async function fetch() {
       dispatch(getArticel());
-    } 
-   fetch()  
+    }
+    fetch();
   }, []);
-
-
-    
 
   article.map((item, idx) => {
     if (item.category == "Entertainment") {
       articleEntertainment.push(item);
     }
-    if (item.category == "Cook") {
+    if (item.category == "Sports") {
       articleBusiness.push(item);
     }
     if (item.category == "IT") {
@@ -55,10 +58,9 @@ const Header = (props) => {
     }
   });
 
-  
-    console.log(article.length, "article")
-  if(article.length == 0){
-    return(<div></div>)
+  console.log(article.length, "article");
+  if (article.length == 0) {
+    return <div></div>;
   }
   return (
     <header>
@@ -74,15 +76,37 @@ const Header = (props) => {
               <Link to="/about" className="left-topbar-item">
                 About
               </Link>
-              <Link to="/contact" className="left-topbar-item">
+              {/* <Link to="/contact" className="left-topbar-item">
                 Contact
-              </Link>
-              <Link to="/login" className="left-topbar-item">
-                Log in
-              </Link>
-              <Link to="/register" className="left-topbar-item">
-                Register
-              </Link>
+              </Link> */}
+              {user ? (
+                <>
+                  <p> Wellcome - {user.fullName}</p>
+                </>
+              ) : (
+                <Link to="/login" className="left-topbar-item">
+                  Log in
+                </Link>
+              )}
+              {user ? (
+                <Link to="/" className="left-topbar-item" onClick={() => {
+                  try {
+                    dispatch(logout())
+                    localStorage.removeItem('user')
+                    return (
+                      <Redirect to="/"/>
+                    )																		
+                  }
+                  catch (err) {
+                    console.log('err ', err)
+                  }}}>
+                  Log out
+                </Link>
+              ) : (
+                <Link to="/register" className="left-topbar-item">
+                  Register
+                </Link>
+              )}
             </div>
             <div className="right-topbar">
               <a href="#">
@@ -168,13 +192,19 @@ const Header = (props) => {
               <Link to={{ pathname: `/` }}>News</Link>
             </li>
             <li>
-              <Link to={{ pathname: `/category`, state: articleEntertainment }}>Entertainment</Link>
+              <Link to={{ pathname: `/entertainment`, state: articleEntertainment }}>
+                Entertainment
+              </Link>
             </li>
             <li>
-              <Link to={{ pathname: `/category`, state: articleBusiness }}>Business</Link>
+              <Link to={{ pathname: `/business`, state: articleBusiness }}>
+                Business
+              </Link>
             </li>
             <li>
-              <Link to={{ pathname: `/category`, state: articleTravel }}>Travel</Link>
+              <Link to={{ pathname: `/travel`, state: articleTravel }}>
+                Travel
+              </Link>
             </li>
           </ul>
         </div>
@@ -201,13 +231,9 @@ const Header = (props) => {
                   <Link to="/">Home</Link>
                 </li>
                 <li className="mega-menu-item">
-                  
                   <a href="/">News</a>
                   <div className="sub-mega-menu">
-                    <div >
-                      
-                      
-                    </div>
+                    <div></div>
 
                     <div className="tab-content">
                       <div
@@ -222,13 +248,13 @@ const Header = (props) => {
                       >
                         <div className="row">
                           {articleEntertainment.map((item, idx) => {
-                            if(idx > 0 && idx <= 6){
-                            return <ItemArticleHeader data={item}/>;
-                           }
+                            if (idx > 0 && idx <= 6) {
+                              return <ItemArticleHeader data={item} />;
+                            }
                           })}
                         </div>
                       </div>
-                      
+
                       <div
                         className={
                           category == "Life Style"
@@ -240,26 +266,25 @@ const Header = (props) => {
                         role="tabpanel"
                       >
                         <div className="row">
-                          
                           {articleTravel.map((item, idx) => {
-                            if(idx > 0 && idx <= 6){
-                            return <ItemArticleHeader data={item}/>;
-                           }
+                            if (idx > 0 && idx <= 6) {
+                              return <ItemArticleHeader data={item} />;
+                            }
                           })}
                         </div>
                       </div>
-                      
-                      
                     </div>
                   </div>
                 </li>
                 <li className="mega-menu-item">
-                <Link to={{ pathname: `/category`, state: articleEntertainment }}>Entertainment</Link>
-                
+                  <Link
+                    to={{ pathname: `/entertainment`, state: articleEntertainment }}
+                  >
+                    Entertainment
+                  </Link>
+
                   <div className="sub-mega-menu">
-                    <div >
-                      
-                    </div>
+                    <div></div>
                     <div className="tab-content">
                       <div
                         className={
@@ -272,24 +297,23 @@ const Header = (props) => {
                         role="tabpanel"
                       >
                         <div className="row">
-                        {articleNew.map((item, idx) => {
-                            if(idx > 0 && idx <= 6){
-                            return <ItemArticleHeader data={item}/>;
-                           }
+                          {articleNew.map((item, idx) => {
+                            if (idx > 0 && idx <= 6) {
+                              return <ItemArticleHeader data={item} />;
+                            }
                           })}
                         </div>
                       </div>
-                      
                     </div>
                   </div>
                 </li>
                 <li className="mega-menu-item">
-                <Link to={{ pathname: `/category`, state: articleBusiness }}>Business</Link>
-                
+                  <Link to={{ pathname: `/business`, state: articleBusiness }}>
+                    Business
+                  </Link>
+
                   <div className="sub-mega-menu">
-                    <div >
-                      
-                    </div>
+                    <div></div>
                     <div className="tab-content">
                       <div
                         className={
@@ -302,23 +326,22 @@ const Header = (props) => {
                         role="tabpanel"
                       >
                         <div className="row">
-                        {articleEntertainment.map((item, idx) => {
-                            if(idx > 0 && idx <= 6){
-                            return <ItemArticleHeader data={item}/>;
-                           }
+                          {articleEntertainment.map((item, idx) => {
+                            if (idx > 0 && idx <= 6) {
+                              return <ItemArticleHeader data={item} />;
+                            }
                           })}
                         </div>
                       </div>
-                      
                     </div>
                   </div>
                 </li>
                 <li className="mega-menu-item">
-                <Link to={{ pathname: `/category`, state: articleTravel }}>Travel</Link>
+                  <Link to={{ pathname: `/travel`, state: articleTravel }}>
+                    Travel
+                  </Link>
                   <div className="sub-mega-menu">
-                    <div >
-                      
-                    </div>
+                    <div></div>
                     <div className="tab-content">
                       <div
                         className={
@@ -331,14 +354,13 @@ const Header = (props) => {
                         role="tabpanel"
                       >
                         <div className="row">
-                        {articleNew.map((item, idx) => {
-                            if(idx > 0 && idx <= 6){
-                            return <ItemArticleHeader data={item} />;
-                           }
+                          {articleNew.map((item, idx) => {
+                            if (idx > 0 && idx <= 6) {
+                              return <ItemArticleHeader data={item} />;
+                            }
                           })}
                         </div>
                       </div>
-                      
                     </div>
                   </div>
                 </li>

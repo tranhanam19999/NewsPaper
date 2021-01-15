@@ -8,7 +8,7 @@ const ItemArticleHeader = (props) => {
           to={{ pathname: `/article-detail`, state: props.data }}
           className="wrap-pic-w hov1 trans-03"
         >
-          <img src={props.data.thumbnail} alt={props.data.alt_thumbnail} />
+          <img src={props.data.thumbnail} alt=""  />
         </Link>
 
         <div className="p-t-10">
