@@ -15,8 +15,18 @@ const Login = (props) => {
     dispatch(loginuser(username,password))
  
   }
+  // axios.post('http://localhost:5000/auth/login', {
+  //   username: 'mkhomich6',
+  //   password: 'abc123'
+  // })
+  // .then(function (response) {
+  //   console.log(response, "res");
+  // })
+  // .catch(function (error) {
+  //   console.log(error, "error");
+  // });
 
-
+  console.log(user, 'user')
   if (user) {
     return (
       <>

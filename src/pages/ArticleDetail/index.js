@@ -8,12 +8,13 @@ import Footer from "../../components/Layout/footer";
 import Tag from "../../components/Tag/tag";
 import PopularPosts from "../../components/PopularPosts/popularposts";
 import Breadcumb from "../../components/Breadcumb/breadcumb";
-// import { getArticelId } from "../../store/article";
 
 const ArticleDetail = (props) => {
 
   const dispatch = useDispatch();
-  const user = localStorage.getItem('user') ;
+  // const user = localStorage.getItem('user') ;
+  const user = useSelector(state =>  state.user)
+
   const comment = useSelector((state) => state.comment);
   const articles = useSelector((state) => state.article);
   
@@ -23,9 +24,6 @@ const ArticleDetail = (props) => {
     async function fetch(){
       dispatch(getcomment(data._id));
       // dispatch(getArticel());
-      
-
-
     }
     fetch();
   }, []);
@@ -36,9 +34,12 @@ const ArticleDetail = (props) => {
 
   const [cmt, setCmt] = useState("");
   const postComment = () => {
-    // dispatch(addcomment(user._id,data._id,cmt));
-    // dispatch(getArticelId(data._id));
+    console.log(user._id, data._id, cmt , "data content")
+    dispatch(addcomment(user._id,data._id,cmt));
+    dispatch(getArticelId(data._id));
+    data = articles;
   };
+
 
   if (comment.lenght < 0) {
     return(<div></div>)
@@ -65,7 +66,7 @@ const ArticleDetail = (props) => {
                     Technology
                   </a>
                   <h3 className="f1-l-3 cl2 p-b-16 p-t-33 respon2">
-                    {articles ? articles.title : data.title}
+                    { data.title}
                   </h3>
                   <div className="flex-wr-s-s p-b-40">
                     <span className="f1-s-3 cl8 m-r-15">
@@ -73,7 +74,7 @@ const ArticleDetail = (props) => {
                         by John Alvarado
                       </a> */}
                       {/* <span className="m-rl-3">-</span> */}
-                      <span>{articles ? articles.createByDate : data.createByDate}</span>
+                      <span>{data.createByDate}</span>
                     </span>
                     <span className="f1-s-3 cl8 m-r-15">5239 Views</span>
                     <a href="#" className="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">
@@ -81,7 +82,7 @@ const ArticleDetail = (props) => {
                     </a>
                   </div>
                   <div className="wrap-pic-max-w p-b-30">
-                    <img src={articles ? articles.thumbnail : data.thumbnail} alt="" />
+                    <img src={data.thumbnail} alt="" />
                   </div>
                   <p className="f1-s-11 cl6 p-b-25">{data.content}</p>
 
@@ -142,7 +143,7 @@ const ArticleDetail = (props) => {
                     Your email address will not be published. Required fields
                     are marked *
                   </p>
-                  <form>
+                  <div>
                     <textarea
                       className="bo-1-rad-3 bocl13 size-a-15 f1-s-13 cl5 plh6 p-rl-18 p-tb-14 m-b-20"
                       name="msg"
@@ -153,11 +154,11 @@ const ArticleDetail = (props) => {
 
                     <button
                       className="size-a-17 bg2 borad-3 f1-s-12 cl0 hov-btn1 trans-03 p-rl-15 m-t-10"
-                      onClick={postComment()}
+                      onClick={() =>postComment()}
                     >
                       Post Comment
                     </button>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>

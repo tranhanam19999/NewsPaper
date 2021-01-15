@@ -17,13 +17,18 @@ import imgbanner from "../../assets/images/banner-01.jpg";
 import ItemArticleHeader from "../ItemArticleHeader/itemArticleHeader";
 
 const Header = (props) => {
-  // const user = useSelector((state) => {
-  //   return state.user;
-  // });
+  const user = useSelector((state) => {
+    return state.user;
+  });
   
-  
-  const user = localStorage.getItem('user') ;
 
+  
+  // const user = localStorage.getItem('user') ;
+  if(user){
+  console.log(user, user.fullName, "user header name")
+}
+
+  
 
   const [category, setCategory] = useState("All");
 
@@ -81,7 +86,7 @@ const Header = (props) => {
               </Link> */}
               {user ? (
                 <>
-                  <p> Wellcome - {user.fullName}</p>
+                  <p> Hi {user.fullName}</p>
                 </>
               ) : (
                 <Link to="/login" className="left-topbar-item">

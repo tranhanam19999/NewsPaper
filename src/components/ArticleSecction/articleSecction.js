@@ -14,7 +14,7 @@ const ArticleSecction = props => {
                             href="#tab1-1"
                             role="tab"
                           >
-                            All
+                            Tất Cả
                           </a>
                         </li>
                         <li className="nav-item">
@@ -72,7 +72,7 @@ const ArticleSecction = props => {
                         href="category-01.html"
                         className="tab01-link f1-s-1 cl9 hov-cl10 trans-03"
                       >
-                        View all
+                        Xem Tất Cả
                         <i className="fs-12 m-l-5 fa fa-caret-right" />
                       </a>
                     </div>
